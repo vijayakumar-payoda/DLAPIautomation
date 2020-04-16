@@ -1,0 +1,8 @@
+Sno,Api,Descriptions,Limit,Page,ResponseCode,ResponseMessage,ResponseText
+1,ReadAccountasset,PS: Read account asset using valid limit and page in payload,25,1,200,OK,asset_type_id
+2,ReadAccountasset,NS: Read account asset using valid limit and invalid page in payload,25,abcd,200,OK,[]
+3,ReadAccountasset,NS: Read account asset using valid limit and without page in payload,25,,200,OK,asset_type_id
+4,ReadAccountasset,NS: Read account asset using invalid limit and valid page in payload,abcd,1,200,OK,[]
+5,ReadAccountasset,NS: Read account asset without limit and valid page in payload,,1,200,OK,asset_type_id
+6,ReadAccountasset,NS: Read account asset using invalid limit and invalid page in payload,abcd,abcd,200,OK,[]
+7,ReadAccountasset,NS: Read account asset without limit and without page in payload,,,200,OK,asset_type_id

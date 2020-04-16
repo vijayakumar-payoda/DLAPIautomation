@@ -1,0 +1,17 @@
+Sno,Api,Descriptions,elementid1,page1,elementid2,page2,elementid3,page3,ResponseCode,ResponseMessage,ResponseText
+1,CreateAssetElement,NS: Creates elements for an asset using  invalid elementid1,abcd,1,14,1,2,2,200,OK,account_asset_id
+2,CreateAssetElement,NS: Creates elements for an asset without elementid1,,1,14,1,2,2,200,OK,account_asset_id
+3,CreateAssetElement,NS: Creates elements for an asset using  invalid page1,32,abcd,14,1,2,2,200,OK,account_asset_id
+4,CreateAssetElement,NS: Creates elements for an asset without page1,32,,14,1,2,2,200,OK,account_asset_id
+5,CreateAssetElement,NS: Creates elements for an asset using  invalid elementid2,32,1,abcd,1,2,2,200,OK,account_asset_id
+6,CreateAssetElement,NS: Creates elements for an asset without elementid2,32,1,,1,2,2,200,OK,account_asset_id
+7,CreateAssetElement,NS: Creates elements for an asset using  invalid page2,32,1,14,abcd,2,2,200,OK,account_asset_id
+8,CreateAssetElement,NS: Creates elements for an asset without page2,32,1,14,,2,2,200,OK,account_asset_id
+9,CreateAssetElement,NS: Creates elements for an asset using  invalid elementid3,32,1,14,1,abcd,2,200,OK,account_asset_id
+10,CreateAssetElement,NS: Creates elements for an asset without elementid3,32,1,14,1,,2,200,OK,account_asset_id
+11,CreateAssetElement,NS: Creates elements for an asset using  invalid page3,32,1,14,1,2,abcd,200,OK,account_asset_id
+12,CreateAssetElement,NS: Creates elements for an asset without page3,32,1,14,1,2,,200,OK,account_asset_id
+13,CreateAssetElement,NS: Creates elements for an asset using  invalid elementid,abcd,1,abcd,1,abcd,2,200,OK,account_asset_id
+14,CreateAssetElement,NS: Creates elements for an asset using  invalid pages,32,abcd,14,abcd,2,abcd,200,OK,account_asset_id
+15,CreateAssetElement,NS: Creates elements for an asset without elementid,,1,,1,,2,200,OK,null
+16,CreateAssetElement,NS: Creates elements for an asset without pages,32,,14,,2,,200,OK,account_asset_id

@@ -1,0 +1,39 @@
+Sno,Api,Descriptions,accountid,assettypeid,customerfacing,languageid,templatename,description,assetname,defaultactive,elementid1,pageno1,elementid2,pageno2,elementid3,pageno3,elementid4,pageno4,elementid5,pageno5,elementid6,pageno6,ResponseCode,ResponseMessage,ResponseText,,Issue,Issue S.no
+1,CreateAccountAsset,PS: Create with valid asset type id - 3- account id and customer facing value 0,23,3,0,,,,,,,,,,,,,,,,,,200,OK,,,,
+2,CreateAccountAsset,PS: Create with valid asset type id - 7 - account id and customer facing value 1,23,7,1,,,,,,,,,,,,,,,,,,200,OK,,,,
+3,CreateAccountAsset,NS: Create with empty account id,,4,0,,,,,,,,,,,,,,,,,,200,OK,,,YES,14
+4,CreateAccountAsset,NS: Create with empty assettypeid,23,,1,,,,,,,,,,,,,,,,,,200,OK,,,YES,15
+5,CreateAccountAsset,NS: Create with empty customer facing value,23,3,,,,,,,,,,,,,,,,,,,200,OK,,,YES,16
+6,CreateAccountAsset,NS: Create with invalid account id,1,1,0,,,,,,,,,,,,,,,,,,200,OK,,,YES,17
+7,CreateAccountAsset,NS: Create with invalid customer facing value,23,1,5,,,,,,,,,,,,,,,,,,200,OK,,,YES,18
+8,CreateAccountAsset,NS: Create with invalid assettype id,23,50,1,,,,,,,,,,,,,,,,,,200,OK,,,YES,19
+9,CreateAccountAsset,PS: Create with valid asset type id - 3- account id and customer facing value 0,23,4,1,,,,,,,,,,,,,,,,,,200,OK,,,,
+10,UpdateAsset,PS: Update cf value from 1 to 0 - validate if cf value is 0,,,0,,,,,,,,,,,,,,,,,,200,OK,0,,,
+11,UpdateAsset,PS: Update cf value from 0 to 1 - validate if cf value is 1,,,1,,,,,,,,,,,,,,,,,,200,OK,1,,,
+12,UpdateAsset,PS: Update cf value from 1 to 0 - validate if asset type id is 4,,,0,,,,,,,,,,,,,,,,,,200,OK,4,,,
+13,UpdateAsset,PS: Update cf value from 0 to 1 - validate if account id is 4,,,1,,,,,,,,,,,,,,,,,,200,OK,23,,,
+14,UpdateAsset,PS: Update cf value from 1 to 0 - validate if success msg is shown in response,,,0,,,,,,,,,,,,,,,,,,200,OK,success,,,
+15,UpdateAsset,NS: Update with cf value empty ,,,,,,,,,,,,,,,,,,,,,200,OK,,,YES,
+16,UpdateAsset,NS: Update with cf value invalid,,,5,,,,,,,,,,,,,,,,,,200,OK,,,YES,
+17,UploadAssetTemplate,PS: With all valid values,,,,1,Oct 14 T2,description for Asset,Oct 14 T2 A2,1,,,,,,,,,,,,,200,OK,template_id,,,
+18,UploadAssetTemplate,NS: Upload without language id,,,,,Oct 14 T2,description for Asset,Oct 14 T2,1,,,,,,,,,,,,,200,OK,template_id,,,
+19,UploadAssetTemplate,NS: Upload without asset name,,,,2,Oct 14 T2 A2,description for Asset,,1,,,,,,,,,,,,,200,OK,template_id,,,
+20,UploadAssetTemplate,NS: Upload without template name,,,,3,,description for Asset,Oct 14 T2 A2,1,,,,,,,,,,,,,200,OK,template_id,,,
+21,UploadAssetTemplate,PS: Upload without description content,,,,4,Oct 14 T2,,Oct 14 T2 A2,1,,,,,,,,,,,,,200,OK,template_id,,,
+22,UploadAssetTemplate,NS: Upload without active default value,,,,5,Oct 14 T2,description for Asset,Oct 14 T2 A2,,,,,,,,,,,,,,200,OK,template_id,,,
+23,UploadAssetTemplate,NS: Upload with invalid language id,,,,10,Oct 14 T2,description for Asset,Oct 14 T2 A2,1,,,,,,,,,,,,,200,OK,template_id,,,
+24,UploadAssetTemplate,NS: Upload with invalid language id - alphabets,,,,asdc,Oct 14 T2,description for Asset,Oct 14 T2 A2,1,,,,,,,,,,,,,200,OK,template_id,,,
+25,UploadAssetTemplate,NS: Upload with invalid value for default active,,,,6,Oct 14 T2,description for Asset,Oct 14 T2 A2,5,,,,,,,,,,,,,200,OK,template_id,,,
+26,CreateAssetElement,PS: With valid values for all 6 elements,,,,,,,,,31,5,32,10,13,1,14,2,1,2,2,3,200,OK,,,,
+27,CreateAssetElement,NS: With empty value for element id 1,,,,,,,,,,5,32,10,13,1,14,2,1,2,2,3,200,OK,,,,
+28,CreateAssetElement,NS: With empty value for element id 2,,,,,,,,,31,6,,10,13,1,14,2,1,2,2,3,200,OK,,,,
+29,CreateAssetElement,NS: With empty value for element id 3,,,,,,,,,31,5,32,10,,1,14,2,1,2,2,3,200,OK,,,,
+30,CreateAssetElement,NS: With empty value for element id 4,,,,,,,,,31,5,32,10,13,1,,2,1,2,2,3,200,OK,,,,
+31,CreateAssetElement,NS: With empty value for element id 5,,,,,,,,,31,5,32,10,13,1,14,2,,2,2,3,200,OK,,,,
+32,CreateAssetElement,NS: With empty value for element id 6,,,,,,,,,31,5,32,10,13,1,14,2,1,2,,3,200,OK,,,,
+33,CreateAssetElement,NS: With empty value for page no 1,,,,,,,,,31,,32,10,13,1,14,2,1,2,2,3,200,OK,,,,
+34,CreateAssetElement,NS: With empty value for page no 2,,,,,,,,,31,5,32,,13,1,14,2,1,2,2,3,200,OK,,,,
+35,CreateAssetElement,NS: With empty value for page no 3,,,,,,,,,31,5,32,10,13,,14,2,1,2,2,3,200,OK,,,,
+36,CreateAssetElement,NS: With empty value for page no 4,,,,,,,,,31,5,32,10,13,1,14,,1,2,2,3,200,OK,,,,
+37,CreateAssetElement,NS: With empty value for page no 5,,,,,,,,,31,5,32,10,13,1,14,2,1,,2,3,200,OK,,,,
+38,CreateAssetElement,NS: With empty value for page no 6,,,,,,,,,31,5,32,10,13,1,14,2,1,2,2,,200,OK,,,,
