@@ -1,0 +1,1 @@
+jmeter -n -t D:\Payoda\Jmeter\Mentis\Sprint1-2\API_Automation_S1S2.jmx -l D:\Payoda\Jmeter\Mentis\report\Summary_Avg_Min_Max.csv -j D:\Payoda\Jmeter\Mentis\report\my-test-plan-result.log -e -o D:\Payoda\Jmeter\Mentis\report\results
