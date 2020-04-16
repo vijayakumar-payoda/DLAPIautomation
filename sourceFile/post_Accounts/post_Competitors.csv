@@ -1,0 +1,39 @@
+Sno,Api,Descriptions,CompetitorName,CompetitorDescription,Companyid,Teststatus,limit,page,search,sortby,order,ResponseCode,ResponseText,ResponseMessage,ReadResonseText,DeleteResponseText
+1,CreateCompetitorfromAdminPS,PS: Create Competitor with valid input,TestCompetitor,Test Competitor creation,10,true,10,1,TestCompetitor,created,desc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+2,CreateCompetitorfromAdminPS,PS: Create Competitor with name and description,TestCompetitor,Test Competitor creation,,false,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+3,CreateCompetitorfromAdminPS,PS: Create Competitor with max chars in name,TestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitor,Test Competitor creation,10,,10,1,TestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitorTestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+4,CreateCompetitorfromAdminPS,PS: Create Competitor with max chars in description,TestCompetitor,Test Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creationTest Competitor creation,10,false,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+5,CreateCompetitorfromAdminPS,NS: Create competitor with Competitor name alone,TestCompetitor,,,,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+6,CreateCompetitorfromAdminPS,NS: Create competitor without competitor description,TestCompetitor,,10,true,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+7,CreateCompetitorfromAdminPS,NS: Create Competitor with invalid teststatus,TestCompetitor,Test Competitor creation,,abcd,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+8,CreateCompetitorfromAdminNS,NS: Create Competitor with invalid Company ,TestCompetitor,Test Competitor creation,abcd,,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+9,CreateCompetitorfromAdminNS,NS: Create competitor with description alone,,Test Competitor creation,,,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+10,CreateCompetitorfromAdminNS,NS: Create competitor with company alone,,,10,,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+11,CreateCompetitorfromAdminNS,NS: Create competitor with enabling test item checkbox alone,,,,true,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+12,CreateCompetitorfromAdminNS,NS: Create competitor without required fields,,,10,true,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+13,CreateCompetitorfromAdminNS,NS: Create competitor without competitor name,,Test Competitor creation,10,true,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+14,CreateCompetitorfromAdminNS,PS: Create Competitor with special chars in name and desc,"TestCompetitor~`!@#$%^&*()_+-={}[]|\:"";'> ","TestCompetitorDescription~`!@#$%^&*()_+-={}[]|\:"";'>",,,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+15,CreateCompetitorfromAdminNS,PS: Create Competitor with duplicate competitor name,"TestCompetitor~`!@#$%^&*()_+-={}[]|\:"";'> ",,,,10,1,TestCompetitor,name,asc,200,Competitor has been created sucessfully,OK,account_id,Competitor has been deleted successfully
+16,ReadCompetitorfromAdmin,PS: Read Competitors when limit is changed,,,,,20,1,TestCompetitor,name,asc,200,,OK,account_id,
+17,ReadCompetitorfromAdmin,PS: Read Competitors when page is changed,,,,,10,2,TestCompetitor,name,asc,200,,OK,false,
+18,ReadCompetitorfromAdmin,PS: Read Competitors when search is changed,,,,,10,1,Test,name,asc,200,,OK,account_id,
+19,ReadCompetitorfromAdmin,PS: Read Competitors when sortby is changed,,,,,10,1,TestCompetitor,Created,asc,200,,OK,account_id,
+20,ReadCompetitorfromAdmin,PS: Read Competitors when order is changed,,,,,10,1,TestCompetitor,name,desc,200,,OK,account_id,
+21,ReadCompetitorfromAdmin,NS: Read Competitors when limit is set to empty,,,,,,1,TestCompetitor,name,asc,404,,Not Found,Not Found,
+22,ReadCompetitorfromAdmin,NS: Read Competitors when page is set to empty,,,,,10,,TestCompetitor,name,asc,404,,Not Found,Not Found,
+23,ReadCompetitorfromAdmin,NS: Read Competitors when search is set to empty,,,,,10,1,,name,asc,404,,Not Found,Not Found,
+24,ReadCompetitorfromAdmin,NS: Read Competitors when sortby is set to empty,,,,,10,1,TestCompetitor,,asc,404,,Not Found,Not Found,
+25,ReadCompetitorfromAdmin,NS: Read Competitors when order is set to empty,,,,,10,1,TestCompetitor,name,,200,,OK,account_id,
+26,ReadCompetitorfromAdmin,NS: Read Competitors when limit is set to invalid,,,,,abcd,1,TestCompetitor,name,asc,200,,OK,false,
+27,ReadCompetitorfromAdmin,NS: Read Competitors when page is set to invalid,,,,,10,abcd,TestCompetitor,name,asc,200,,OK,false,
+28,ReadCompetitorfromAdmin,NS: Read Competitors when search is set to invalid,,,,,10,1,abcd,name,asc,200,,OK,false,
+29,ReadCompetitorfromAdmin,NS: Read Competitors when sortby is set to invalid,,,,,10,1,TestCompetitor,abcd,asc,200,,OK,false,
+30,ReadCompetitorfromAdmin,NS: Read Competitors when order is set to invalid,,,,,10,1,TestCompetitor,name,abcd,200,,OK,false,
+31,UpdateCompetitorfromAdminPS,PS: Modify Competitor name and Description and CompanyId,ModifyCompetitorscenario1,Update CompetitorDescription scenario1,31,,,,,,,200,Competitor has been updated successfully,OK,,
+32,UpdateCompetitorfromAdminPS,PS: Modify Competitor name and Description alone,ModifyCompetitorscenario2,Update CompetitorDescription scenario2,,,,,,,,200,Competitor has been updated successfully,OK,,
+33,UpdateCompetitorfromAdminPS,PS: Modify Competitor name and CompanyId,ModifyCompetitorscenario3,,7424,,,,,,,200,Competitor has been updated successfully,OK,,
+34,UpdateCompetitorfromAdminNS,NS: Modify Competitorname alone,ModifyCompetitorNS1,,,,,,,,,200,Competitor has been updated successfully,OK,,
+35,UpdateCompetitorfromAdminNS,NS: Modify CompetitorDescription alone,,ModifyCompetitorNS2,,,,,,,,200,Competitor has been updated successfully,OK,,
+36,UpdateCompetitorfromAdminNS,NS: Modify CompanyID alone,,,10,,,,,,,200,Competitor has been updated successfully,OK,,
+37,UpdateCompetitorfromAdminNS,NS: Modify with invalid companyID,,,abcd,,,,,,,200,Competitor has been updated successfully,OK,,
+38,UpdateCompetitorfromAdminNS,NS: Modify without any data,,,,,,,,,,200,Competitor has been updated successfully,OK,,

@@ -1,0 +1,16 @@
+Sno,Api,Descriptions,name,firstname,role_type_id,role_name,active,user_privileges,account_geo_id,ResponseCode,ResponseMessage,ResponseText
+1,CreateExternalshare,Create external share using valid data,DemoQA,DemoQA,1,1,1,false,0,200,OK,true
+2,CreateExternalshare,Create external share using invalid name,abcd,DemoQA,1,1,1,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+3,CreateExternalshare,Create external share without name,,DemoQA,1,1,1,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+4,CreateExternalshare,Create external share using invalid firstname,DemoQA,abcd,1,1,1,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+5,CreateExternalshare,Create external share without  firstname,DemoQA,,1,1,1,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+6,CreateExternalshare,Create external share using invalid roletypeid,DemoQA,DemoQA,abcd,1,1,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+7,CreateExternalshare,Create external share without roletypeid,DemoQA,DemoQA,,1,1,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+8,CreateExternalshare,Create external share using invalid rolename,DemoQA,DemoQA,1,abcd,1,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+9,CreateExternalshare,Create external share without rolename,DemoQA,DemoQA,1,,1,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+10,CreateExternalshare,Create external share using invalid active value,DemoQA,DemoQA,1,1,abcd,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+11,CreateExternalshare,Create external share without active value,DemoQA,DemoQA,1,1,,false,0,200,OK,Value Proposition Already Shared. Please Try Updating
+12,CreateExternalshare,Create external share using invalid userprivilege,DemoQA,DemoQA,1,1,1,abcd,0,200,OK,Value Proposition Already Shared. Please Try Updating
+13,CreateExternalshare,Create external share without userprivilege,DemoQA,DemoQA,1,1,1,,0,200,OK,Value Proposition Already Shared. Please Try Updating
+14,CreateExternalshare,Create external share using invalid accountgeoid,DemoQA,DemoQA,1,1,1,false,abcd,200,OK,Value Proposition Already Shared. Please Try Updating
+15,CreateExternalshare,Create external share without accountgeoid,DemoQA,DemoQA,1,1,1,false,,200,OK,Value Proposition Already Shared. Please Try Updating

@@ -1,0 +1,12 @@
+Sno,Api,Descriptions,show_all,soft_only,full_vc_metrics,alt_names,single_metric,ResponseCode,ResponseText,ResponseMessage
+1,readvaluePropmetrics,PS: Read valueProp metrics with valid  data,1,0,0,0,1,200,total_costs,OK
+2,readvaluePropmetrics,NS: Read valueProp metrics with invalid show_all value,abcd,0,0,0,1,200,total_costs,OK
+3,readvaluePropmetrics,NS: Read valueProp metrics with invalid soft_only value,1,abcd,0,0,1,200,total_costs,OK
+4,readvaluePropmetrics,NS: Read valueProp metrics with invalid full_vc_metrics value,1,0,abcd,0,1,200,total_costs,OK
+5,readvaluePropmetrics,NS: Read valueProp metrics with invalid alt_names value,1,0,0,abcd,1,200,total_costs,OK
+6,readvaluePropmetrics,NS: Read valueProp metrics with invalid single_metric value,1,0,0,0,abcd,200,total_costs,OK
+7,readvaluePropmetrics,NS: Read valueProp metrics without show_all value,,0,0,0,1,404,The requested URL was not found on this server.,Not Found
+8,readvaluePropmetrics,NS: Read valueProp metrics without soft_only value,1,,0,0,1,404,The requested URL was not found on this server.,Not Found
+9,readvaluePropmetrics,NS: Read valueProp metrics without full_vc_metrics value,1,0,,0,1,404,The requested URL was not found on this server.,Not Found
+10,readvaluePropmetrics,NS: Read valueProp metrics without alt_names value,1,0,0,,1,404,The requested URL was not found on this server.,Not Found
+11,readvaluePropmetrics,NS: Read valueProp metrics without single_metric value,1,0,0,0,,404,The requested URL was not found on this server.,Not Found

@@ -1,0 +1,12 @@
+Sno,Api,Descriptions,SearchType,SearchTerm,Page,Limit,ResponseCode,ResponseMessage,ResponseText
+1,SearchCaseStudy,PS: Search CaseStudy using valid data,name,Fuel,1,10,200,OK,account_solution_id
+2,SearchCaseStudy,PS: Search CaseStudy by changing searchtype,tag,,1,10,200,OK,account_solution_id
+3,SearchCaseStudy,PS: Search CaseStudy by changing searchterm,name,General,1,10,200,OK,account_solution_id
+4,SearchCaseStudy,NS: Search CaseStudy using invalid searchtype,abcd,General,1,10,200,OK,null
+5,SearchCaseStudy,NS: Search CaseStudy using invalid searchterm,name,abcd,1,10,200,OK,0
+6,SearchCaseStudy,NS: Search CaseStudy using without searchtype,,Fuel,1,10,200,OK,null
+7,SearchCaseStudy,NS: Search CaseStudy using without searchterm,name,,1,10,200,OK,account_solution_id
+8,SearchCaseStudy,NS: Search CaseStudy using invalid Page,name,General,abcd,10,200,OK,null
+9,SearchCaseStudy,NS: Search CaseStudy using empty page,name,Fuel,,10,200,OK,null
+10,SearchCaseStudy,NS: Search CaseStudy using invalid limit,name,Fuel,1,abcd,200,OK,null
+11,SearchCaseStudy,NS: Search CaseStudy using empty limit,name,Fuel,1,,200,OK,null

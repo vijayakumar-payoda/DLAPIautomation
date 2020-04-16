@@ -1,0 +1,13 @@
+Sno,Api,Descriptions,searchType,searchTerm,page,limit,company_id,ResponseCode,ResponseMessage,ResponseText
+1,SearchCasestudy,PS: Search CaseStudy using valid data,name,Test_Model,1,10,10,200,OK,account_solution_id
+2,SearchCasestudy,NS: Search Casestudy using invalid searchtype,abcd,Test_Model,1,10,10,200,OK,[]
+3,SearchCasestudy,NS: Search Casestudy without searchtype,,Test_Model,1,10,10,200,OK,[]
+4,SearchCasestudy,NS: Search Casestudy using invalid searchterm,name,abcd,1,10,10,200,OK,[]
+5,SearchCasestudy,NS: Search Casestudy without Searchterm,name,,1,10,10,200,OK,account_solution_id
+6,SearchCasestudy,NS: Search Casestudy using invalid page,name,Test_Model,abcd,10,10,200,OK,[]
+7,SearchCasestudy,NS: Search Casestudy without page,name,Test_Model,,10,10,200,OK,[]
+8,SearchCasestudy,NS: Search Casestudy using invalid limit,name,Test_Model,1,abcd,10,200,OK,[]
+9,SearchCasestudy,NS: Search Casestudy without limit,name,Test_Model,1,,10,200,OK,[]
+10,SearchCasestudy,NS: Search Casestudy using invalid companyid,name,Test_Model,1,10,abcd,200,OK,[]
+11,SearchCasestudy,NS: Search Casestudy without companyid,name,Test_Model,1,10,,200,OK,[]
+12,SearchCasestudy,NS: Search Csestudy using invalid data,abcd,abcd,abcd,abcd,abcd,200,OK,[]

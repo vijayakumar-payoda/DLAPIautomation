@@ -1,0 +1,35 @@
+Sno,Api,Descriptions,AccrualTypeId,Cost,ScaleTypeId,CostCategoryTypeId,ExpenseTypeId,DefaultInclude,CostBaselineanswer,ResponseCode,ResponseMessage,ResponseText
+1,AddSolutionCost,PS: Add solution cost wth valid data,1,20,1,0,1,0,0,200,OK,account_solution_id
+2,AddSolutionCost,NS: Add solution cost with invalid accrualtypeID,abcd,20,1,0,1,0,0,200,OK,null
+3,AddSolutionCost,NS: Add solution cost without accrualtypeID,,20,1,0,1,0,0,200,OK,null
+4,AddSolutionCost,NS: Add solution cost with invalid cost,1,abcd,1,0,1,0,0,406,Not Acceptable,Not Acceptable
+5,AddSolutionCost,NS: Add solution cost without cost,1,,1,0,1,0,0,406,Not Acceptable,Not Acceptable
+6,AddSolutionCost,NS: Add solution with invalid scaletypeID,1,20,abcd,0,1,0,0,200,OK,null
+7,AddSolutionCost,NS: Add solution without scaletypeID,1,20,,0,1,0,0,200,OK,null
+8,AddSolutionCost,NS: Add solution cost with invalid expensetypeID,1,20,1,0,abcd,0,0,200,OK,null
+9,AddSolutionCost,NS: Add solution cost without expensetypeID,1,20,1,0,,0,0,200,OK,null
+10,AddSolutionCost,NS: Add solution cost with invalid defaultinclude,1,20,1,0,1,abcd,0,406,Not Acceptable,Not Acceptable
+11,AddSolutionCost,NS: Add solution cost without defaultinclude,1,20,1,0,1,,0,406,Not Acceptable,Not Acceptable
+12,AddSolutionCost,NS: Add solution cost with invalid costbaselineanswer,1,20,1,0,1,0,abcd,200,OK,null
+13,AddSolutionCost,NS: Add solution cost without costbaselineanswer,1,20,1,0,1,0,,200,OK,account_solution_id
+14,AddSolutionCost,NS: Add solution cost with invalid data,abcd,abcd,abcd,abcd,abcd,abcd,abcd,406,Not Acceptable,Not Acceptable
+15,AddSolutionCost,NS: Add solution cost without data,,,,,,,,406,Not Acceptable,Not Acceptable
+16,AddSolutionCost,NS: Add solution cost with invalid costcategorytype,1,20,1,abcd,1,0,0,,,
+17,AddSolutionCost,NS: Add solution cost without costcategorytype,1,20,1,,1,0,0,,,
+18,UpdateSolutionCost,PS: Update solution cost with valid data,2,40,2,1,2,1,1,200,OK,account_solution_id
+19,UpdateSolutionCost,NS: Update solution cost with invalid accrualtype id,abcd,40,2,1,2,1,1,200,OK,account_solution_id
+20,UpdateSolutionCost,NS: Update solution cost without accrualtype id,,40,2,1,2,1,1,200,OK,account_solution_id
+21,UpdateSolutionCost,NS: Update solution cost with invalid cost,2,abcd,2,1,2,1,1,200,OK,account_solution_id
+22,UpdateSolutionCost,NS: Update solution cost without cost,2,,2,1,2,1,1,200,OK,account_solution_id
+23,UpdateSolutionCost,NS: Update solution cost with invalid scaletype id,2,40,abcd,1,2,1,1,200,OK,account_solution_id
+24,UpdateSolutionCost,NS: Update solution cost without scaletype id,2,40,,1,2,1,1,200,OK,account_solution_id
+25,UpdateSolutionCost,NS: Update solution cost with invalid costcategory id,2,40,2,abcd,2,1,1,200,OK,account_solution_id
+26,UpdateSolutionCost,NS: Update solution cost without costcategory id,2,40,2,,2,1,1,200,OK,account_solution_id
+27,UpdateSolutionCost,NS: Update solution cost with invalid expensetype id,2,40,2,1,abcd,1,1,200,OK,account_solution_id
+28,UpdateSolutionCost,NS: Update solution cost without expensetype id,2,40,2,1,,1,1,200,OK,account_solution_id
+29,UpdateSolutionCost,NS: Update solution cost with invalid defaultinclude,2,40,2,1,2,abcd,1,406,Not Acceptable,Not Acceptable
+30,UpdateSolutionCost,NS: Update solution cost without defaultinclude,2,40,2,1,2,,1,406,Not Acceptable,Not Acceptable
+31,UpdateSolutionCost,NS: Update solution cost with invalid costbaselineanswer,2,40,2,1,2,1,abcd,200,OK,account_solution_id
+32,UpdateSolutionCost,NS: Update solution cost without costbaselineanswer,2,40,2,1,2,1,,200,OK,account_solution_id
+33,UpdateSolutionCost,NS: Update solution cost without data,,,,,,,,406,Not Acceptable,Not Acceptable
+34,UpdateSolutionCost,NS: Update solution cost with invalid data,abcd,abcd,abcd,abcd,abcd,abcd,abcd,406,Not Acceptable,Not Acceptable

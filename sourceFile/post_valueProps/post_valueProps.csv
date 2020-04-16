@@ -1,0 +1,8 @@
+Sno,Api,Descriptions,Companyid,Isvalueprop,valueProp_statustype_id,Comment,ResponseCode,ResponseText,ResponseMessage
+1,Createvalueprops,Create value props with Isvalueprop as false,10,false,,,200,company_id,OK
+2,Createvalueprops,Create value props with valid companyid,10,true,,,200,company_id,OK
+3,UpdatevaluePropStatus,PS: Update valueProp status with valid data,,,2,valueProp status updated successfully,200,value_prop_status_type_id,OK
+4,UpdatevaluePropStatus,NS: Update valueProp status without Comments,,,4,,200,value_prop_status_type_id,OK
+5,UpdatevaluePropStatus,NS: Update valueProp status without selecting status,,,,valueProp status updated successfully,200,value_prop_status_type_id,OK
+6,UpdatevaluePropStatus,NS: Update valueProp status with invalid status type,,,abcd,valueProp status updated successfully,200,value_prop_status_type_id,OK
+7,UpdatevaluePropStatus,NS: Update valueProp status with incorrect status type,,,234,valueProp status updated successfully,200,value_prop_status,OK

@@ -1,0 +1,21 @@
+Sno,Api,Descriptions,Search,Page,Limit,Sortby,Order,ResponseCode,ResponseText,ResponseMessage
+1,searchvalueProps,PS : Search valueProps by name,Walter,1,10,name,asc,200,company_id,OK
+2,searchvalueProps,PS: Search valueProps by all,all,1,10,name,asc,200,company_id,OK
+3,searchvalueProps,PS : Search valueProps  Changing page,all,2,10,name,asc,200,company_id,OK
+4,searchvalueProps,PS : Search valueProps  Changing limit,all,1,20,name,asc,200,company_id,OK
+5,searchvalueProps,PS : Search valueProps sortby created,all,1,10,created,asc,200,company_id,OK
+6,searchvalueProps,PS : Search valueProps sortby status,all,1,10,status,desc,200,company_id,OK
+7,searchvalueProps,PS : Search valueProps sortby totalcosts,all,1,10,totalcosts,desc,200,company_id,OK
+8,searchvalueProps,PS : Search valueProps sortby totalbenefits,all,1,10,totalbenefits,desc,200,company_id,OK
+9,searchvalueProps,PS : Search valueProps sortby company_name,all,1,10,company_name,desc,200,company_id,OK
+10,searchvalueProps,PS : Search valueProps sortby name,all,1,10,name,desc,200,company_id,OK
+11,searchvalueProps,NS : Search valueProps  by invalid search data,abcd,1,10,name,desc,200,[],OK
+12,searchvalueProps,NS : Search valueProps  invalid page,all,abcd,10,name,desc,200,[],OK
+13,searchvalueProps,NS : Search valueProps  invalid limit,all,1,abcd,name,desc,200,[],OK
+14,searchvalueProps,NS : Search valueProps  invalid sortby,all,1,10,abcd,desc,200,[],OK
+15,searchvalueProps,NS : Search valueProps  invalid order,all,1,10,name,abcd,200,[],OK
+16,searchvalueProps,NS : Search valueProps  without search,,1,30,name,desc,200,company_id,OK
+17,searchvalueProps,NS : Search valueProps  without page,all,,10,name,desc,200,company_id,OK
+18,searchvalueProps,NS : Search valueProps  without limit,all,1,,name,desc,200,[],OK
+19,searchvalueProps,NS : Search valueProps  without sortby,all,1,10,,desc,200,[],OK
+20,searchvalueProps,NS : Search valueProps  without order,all,3,10,name,,200,company_id,OK

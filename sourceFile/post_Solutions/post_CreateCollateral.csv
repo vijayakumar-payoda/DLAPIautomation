@@ -1,0 +1,11 @@
+Sno,Api,Descriptions,FormatTypeId,CollateralDescription,URL,ResponseCode,ResponseMessage,ResponseText
+1,CreateCollateral,PS: Create a collateral with valid data,1,Test Description,test.value-cloud.com,200,OK,result
+2,CreateCollateral,PS: Create a collateral without description,1,,test.value-cloud.com,200,OK,result
+3,CreateCollateral,NS: Create a collateral with invalid FormatType id,abcd,Test Description,test.value-cloud.com,200,OK,result
+4,CreateCollateral,NS: Create a collateral without FormatType id,,Test Description,test.value-cloud.com,200,OK,result
+5,CreateCollateral,NS: Create a collateral with invalid URL,1,Test Description,abcd,200,OK,result
+6,CreateCollateral,NS: Create a collateral without URL,1,Test Description,,200,OK,result
+7,UpdateCollateral,PS: Updates collateral with valid data,2,Modify test collateral Description,test.value-payoda.com,200,OK,Solution Asset has been updated successfully
+8,UpdateCollateral,PS: Updates collateral without description,1,,test.value-payoda.com,200,OK,Solution Asset has been updated successfully
+9,UpdateCollateral,NS: Updates collateral with invalid URL,3,Test Description,abcd,200,OK,Solution Asset has been updated successfully
+10,UpdateCollateral,NS: Updates collateral without URL,3,Test Description,,200,OK,Solution Asset has been updated successfully

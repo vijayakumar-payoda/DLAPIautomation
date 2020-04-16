@@ -1,0 +1,9 @@
+Sno,Api,Descriptions,company_id,redacted,tag,ResponseCode,ResponseMessage,ResponseText
+1,CreateCaseStudy,PS: Create a casestudy with valid data,10,0,Test CaseStudy description,200,OK,account_solution_id
+2,CreateCaseStudy,NS: Create a casestudy with invalid company id,abcd,0,Test CaseStudy description,200,OK,account_solution_id
+3,CreateCaseStudy,NS: Create a casestudy without company id,,0,Test CaseStudy description,200,OK,account_solution_id
+4,CreateCaseStudy,NS: Create a casestudy with redacted enabled ,10,1,Test CaseStudy description,200,OK,account_solution_id
+5,CreateCaseStudy,NS: Create a casestudy with redacted disabled ,10,0,Test CaseStudy description,200,OK,account_solution_id
+6,CreateCaseStudy,NS: Create a casestudy with invalid redacted value,10,abcd,Test CaseStudy description,406,Not Acceptable,Not Acceptable
+7,CreateCaseStudy,NS: Create a casestudy without redacted value,10,,Test CaseStudy description,406,Not Acceptable,Not Acceptable
+8,CreateCaseStudy,NS: Create a casestudy without tag value,10,0,,200,OK,account_solution_id

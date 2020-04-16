@@ -1,0 +1,12 @@
+Sno,Api,Descriptions,companyid,isAccountSolution,limit,page,ResponseCode,ResponseMessage,ResponseText
+1,Readmetriccasestudies,PS: Read metric casestudies using valid data,10,0,10,1,200,OK,account_solution_id
+2,Readmetriccasestudies,NS: Read metric casestudies using invalid companyid,abcd,0,10,1,200,OK,[]
+3,Readmetriccasestudies,NS: Read metric casestudies without companyid,,0,10,1,404,Not Found,The requested URL was not found on this server.
+4,Readmetriccasestudies,NS: Read metric casestudies using invalid isAccountSolution,10,abcd,10,1,200,OK,[]
+5,Readmetriccasestudies,NS: Read metric casestudies without isAccountSolution,10,,10,1,404,Not Found,The requested URL was not found on this server.
+6,Readmetriccasestudies,NS: Read metric casestudies using invalid limit,10,0,abcd,1,200,OK,[]
+7,Readmetriccasestudies,NS: Read metric casestudies without limit,10,0,,1,404,Not Found,The requested URL was not found on this server.
+8,Readmetriccasestudies,NS: Read metric casestudies using invalid page,10,0,10,abcd,200,OK,[]
+9,Readmetriccasestudies,NS: Read metric casestudies without page,10,0,10,,200,OK,account_solution_id
+10,Readmetriccasestudies,NS: Read metric casestudies using invalid data,abcd,abcd,abcd,abcd,200,OK,[]
+11,Readmetriccasestudies,NS: Read metric casestudies without data,,,,,404,Not Found,The requested URL was not found on this server.

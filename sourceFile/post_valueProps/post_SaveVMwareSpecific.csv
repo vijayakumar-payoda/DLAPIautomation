@@ -1,0 +1,15 @@
+Sno,Api,Descriptions,Select_project1,Select_project2,Select_project3,Select_project4,Select_project5,Select_project6,ResponseCode,ResponseText,ResponseMessage
+1,SelectprojectforvalueProp,PS: Saves Vmware specific with valid projects,1,2,3,4,5,6,200,name_en_GB,OK
+2,SelectprojectforvalueProp,PS: Saves Vmware specific with project 1 alone,1,,,,,,200,name_en_GB,OK
+3,SelectprojectforvalueProp,PS: Saves Vmware specific with project 1 to  2,1,2,,,,,200,name_en_GB,OK
+4,SelectprojectforvalueProp,PS: Saves Vmware specific with project 1 to 3,1,2,3,,,,200,name_en_GB,OK
+5,SelectprojectforvalueProp,PS: Saves Vmware specific with project 1 to 4,1,2,3,4,,,200,name_en_GB,OK
+6,SelectprojectforvalueProp,PS: Saves Vmware specific with project 1 to 5,1,2,3,4,5,,200,name_en_GB,OK
+7,SelectprojectforvalueProp,PS: Saves Vmware specific with project 1to 6,1,2,3,4,5,6,200,name_en_GB,OK
+8,SelectprojectforvalueProp,NS: Saves Vmware specific with project 1 as invalid,abcd,2,3,4,5,6,200,name_en_GB,OK
+9,SelectprojectforvalueProp,NS: Saves Vmware specific with project 2 as invalid,1,abcd,3,4,5,6,200,name_en_GB,OK
+10,SelectprojectforvalueProp,NS: Saves Vmware specific with project 3 as invalid,1,2,abcd,4,5,6,200,name_en_GB,OK
+11,SelectprojectforvalueProp,NS: Saves Vmware specific with project 4 as invalid,1,2,3,abcd,5,6,200,name_en_GB,OK
+12,SelectprojectforvalueProp,NS: Saves Vmware specific with project 5 as invalid,1,2,3,4,abcd,6,200,name_en_GB,OK
+13,SelectprojectforvalueProp,NS: Saves Vmware specific with project 6 as invalid,1,2,3,4,5,abcd,200,name_en_GB,OK
+14,SelectprojectforvalueProp,NS: Saves Vmware specific without selecting any project,,,,,,,200,false,OK

@@ -1,0 +1,26 @@
+Sno,Api,Descriptions,situation_type_id1,situation_element_id1,situation_type_id2,situation_element_id2,situation_type_id3,situation_element_id3,situation_type_id4,situation_element_id4,Scaler_value,ResponseCode,ResponseText,ResponseMessage
+1,CreateSituation,Creates value prop situation without situationtype_id1,,63,1,179,4,11900,3,194,,200,situation_type_id,OK
+2,CreateSituation,Creates value prop situation without situation_element_id1,2,,1,179,4,11900,3,194,,200,situation_type_id,OK
+3,CreateSituation,Creates value prop situation without situationtype_id2,2,63,,179,4,11900,3,194,,200,situation_type_id,OK
+4,CreateSituation,Creates value prop situation without situation_element_id2,2,63,2,,4,11900,3,194,,200,situation_type_id,OK
+5,CreateSituation,Creates value prop situation without situation type id1 and element id1,,,2,179,4,11900,3,194,,200,situation_type_id,OK
+6,CreateSituation,Creates value prop situation without situation type id2 and element id2,2,63,,,4,11900,3,194,,200,situation_type_id,OK
+7,CreateSituation,Creates value prop situation with invalid situationtype_id1,abcd,63,1,179,4,11900,3,194,,200,situation_type_id,OK
+8,CreateSituation,Creates value prop situation with invalid  situation_element_id1,2,abcd,1,179,4,11900,3,194,,200,situation_type_id,OK
+9,CreateSituation,Creates value prop situation with invalid  situationtype_id2,2,63,abcd,179,4,11900,3,194,,200,situation_type_id,OK
+10,CreateSituation,Creates value prop situation with invalid  situation_element_id2,2,63,2,abcd,4,11900,3,194,,200,situation_type_id,OK
+11,CreateSituation,Creates value prop situation without situationtype_id3,2,63,1,179,,11900,3,194,,200,situation_type_id,OK
+12,CreateSituation,Creates value prop situation without situation_element_id3,2,63,1,179,4,,3,194,,200,situation_type_id,OK
+13,CreateSituation,Creates value prop situation without situationtype_id4,2,63,1,179,4,11900,,194,,200,situation_type_id,OK
+14,CreateSituation,Creates value prop situation without situation_element_id4,2,63,2,179,4,11900,3,,,200,situation_type_id,OK
+15,CreateSituation,Creates value prop situation without situation type id3 and element id3,2,63,2,179,,,3,194,,200,situation_type_id,OK
+16,CreateSituation,Creates value prop situation without situation type id4 and element id4,2,63,1,179,4,11900,,,,200,situation_type_id,OK
+17,CreateSituation,Creates value prop situation with invalid situationtype_id3,2,63,1,179,abcd,11900,3,194,,200,situation_type_id,OK
+18,CreateSituation,Creates value prop situation with invalid  situation_element_id3,2,63,1,179,4,abcd,3,194,,200,situation_type_id,OK
+19,CreateSituation,Creates value prop situation with invalid  situationtype_id4,2,63,1,179,4,11900,abcd,194,,200,situation_type_id,OK
+20,CreateSituation,Creates value prop situation with invalid  situation_element_id4,2,63,1,179,4,11900,3,abcd,,200,situation_type_id,OK
+21,CreateSituation,Creates value prop situation without any data,,,,,,,,,,200,situation_type_id,OK
+22,CreateSituation,Creates value prop situation using valid data,2,63,1,179,4,11900,3,194,,200,situation_type_id,OK
+23,CreateScaler,Create scaler with valid value,,,,,,,,,1500,200,already_updated,OK
+24,CreateScaler,Create scaler with invalid value,,,,,,,,,abcd,406,Not Acceptable,Not Acceptable
+25,CreateScaler,Create scaler without value,,,,,,,,,,406,Not Acceptable,Not Acceptable

@@ -1,0 +1,14 @@
+Sno,Api,Descriptions,scratchpad_factor_type_id,factor_id,operator_id1,operator_id2,open_paren,close_paren,operand,ResponseCode,ResponseMessage,ResponseText
+1,CreateScratchpad,PS: Create scratchpad with valid data,1,1,1,5,1,1,10,200,OK,account_id
+2,CreateScratchpad,NS: Create scratchpad with invalid factor_id,1,abcd,1,5,1,1,10,200,OK,account_id
+3,CreateScratchpad,NS: Create scratchpad without  factor_id,1,,1,5,1,1,10,200,OK,account_id
+4,CreateScratchpad,NS: Create scratchpad with invalid operator_id1,1,1,abcd,5,1,1,10,200,OK,account_id
+5,CreateScratchpad,NS: Create scratchpad without operator_id1,1,1,,5,1,1,10,200,OK,account_id
+6,CreateScratchpad,NS: Create scratchpad with invalid operator_id2,1,1,1,abcd,1,1,10,200,OK,improper params
+7,CreateScratchpad,NS: Create scratchpad without operator_id2,1,1,1,,1,1,10,200,OK,improper params
+8,CreateScratchpad,NS: Create scratchpad with invalid open_paren,1,1,1,,abcd,1,10,200,OK,improper params
+9,CreateScratchpad,NS: Create scratchpad without open_paren,1,1,1,,,1,10,200,OK,improper params
+10,CreateScratchpad,NS: Create scratchpad with invalid close_paren,1,1,1,,1,abcd,10,200,OK,improper params
+11,CreateScratchpad,NS: Create scratchpad without close_paren,1,1,1,,1,,10,200,OK,improper params
+12,CreateScratchpad,NS: Create scratchpad with invalid operand,1,1,1,,1,1,abcd,200,OK,improper params
+13,CreateScratchpad,NS: Create scratchpad without operand,1,1,1,,1,1,,200,OK,improper params

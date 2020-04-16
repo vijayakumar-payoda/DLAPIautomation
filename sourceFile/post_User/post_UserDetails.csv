@@ -1,0 +1,61 @@
+Sno,Api,Descriptions,Firstname,Lastname,Username,Emailaddress,Roletypeid,Manageremail,Firstlogin,TempPassword,Acceptedterms,UsertypeId,Accountid,PrivilegeId,ResponseCode,ResponseMessage,ResponseText
+1,CreateUserfromAdminPS,PS: Create user with valid details,Demo,User,Demo User,demouseremail,1,demomanager,1,1,0,1,,,200,OK,user_id
+2,CreateUserfromAdminPS,PS: Create user with roletype – Sales Support,Demo,User,Demo User,demouseremail,2,demomanager,1,1,0,1,,,200,OK,user_id
+3,CreateUserfromAdminPS,PS: Create user with roletype – Sales Management,Demo,User,Demo User,demouseremail,3,demomanager,1,1,0,1,,,200,OK,user_id
+4,CreateUserfromAdminPS,PS: Create user with roletype – Value Expert,Demo,User,Demo User,demouseremail,4,demomanager,1,1,0,1,,,200,OK,user_id
+5,CreateUserfromAdminPS,PS: Create user with roletype – Executive Management,Demo,User,Demo User,demouseremail,5,demomanager,1,1,0,1,,,200,OK,user_id
+6,CreateUserfromAdminPS,PS: Create user with roletype – Program Management,Demo,User,Demo User,demouseremail,6,demomanager,1,1,0,1,,,200,OK,user_id
+7,CreateUserfromAdminPS,NS: Create user with firstname having more than 30 chars,DemoFirstNameDemoFirstNameDemoFirstName,User,Demo User,demouseremail,1,demomanager,1,1,0,1,,,200,OK,user_id
+8,CreateUserfromAdminPS,NS: Create user with lastname having more than 30 chars,Demo,DemoLastNameDemoLastNameDemoLastName,Demo User,demouseremail,1,demomanager,1,1,0,1,,,200,OK,user_id
+9,CreateUserfromAdminPS,NS: Create user with username having more than 30 chars,Demo,User,DemoUserDemoUserDemoUserDemoUser ,demouseremail,1,demomanager,1,1,0,1,,,200,OK,user_id
+10,CreateUserfromAdminPS,NS: Create user with invalid roletype,Demo,User,Demo User,demouseremail,8,demomanager,1,1,0,1,,,200,OK,user_id
+11,CreateUserfromAdminPS,NS: Create user with invalid temp password,Demo,User,Demo User,demouseremail,1,demomanager,1,331,0,1,,,200,OK,user_id
+12,CreateUserfromAdminPS,NS: Create user with invalid acceptedterms,Demo,User,Demo User,demouseremail,1,demomanager,1,1,423,1,,,200,OK,user_id
+13,CreateUserfromAdminPS,NS: Create user with invalid usertypeid,Demo,User,Demo User,demouseremail,1,demomanager,1,1,0,533,,,200,OK,user_id
+14,CreateUserfromAdminPS,PS: Create user with emailaddress in uppercase letters,Demo,User,Demo User,DEMOUSEREMAIL,1,demomanager,1,1,0,1,,,200,OK,user_id
+15,CreateUserfromAdmin,PS: Create user with data,SanityTest,User,SanityTest User,SanityTestUser@guerrillamail.com,1,TestManager,1,1,0,1,,,200,OK,user_id
+16,CreateUserfromAdmin,NS: Create user with duplicate username,SanityTest,User,SanityTest User,SanityTestUser01@guerrillamail.com,1,TestManager,1,1,0,1,,,200,OK,errors
+17,CreateUserfromAdminNS,NS: Create user with firtsname alone,Demo,,,,,,1,1,0,1,,,200,OK,errors
+18,CreateUserfromAdminNS,NS: Create user with lastname alone,,User,,,,,1,1,0,1,,,200,OK,errors
+19,CreateUserfromAdminNS,NS: Create user with username alone,,,Demo User,,,,1,1,0,1,,,200,OK,errors
+20,CreateUserfromAdminNS,NS: Create user with roletypeid alone,,,,,1,,1,1,0,1,2,,200,OK,errors
+21,CreateUserfromAdminNS,NS: Create user with email alone,,,,demouseremail76786@guerrillamail.com,,,1,1,0,1,,,200,OK,errors
+22,CreateUserfromAdminNS,NS: Create user with Manageremail alone,,,,,,demimanager76888@guerrillamail.com,1,1,0,1,,,200,OK,errors
+23,CreateUserfromAdminNS,NS: Create user without Firstname,,User,Demo User,demouseremail,1,demomanager,1,1,0,1,,,200,OK,errors
+24,CreateUserfromAdminNS,NS: Create user without Username,Demo,User,,demouseremail,1,demomanager,1,1,0,1,,,200,OK,errors
+25,CreateUserfromAdminNS,NS: Create user without Roletypeid,Demo,User,Demo User,demouseremail,,demomanager,1,1,0,1,,,200,OK,errors
+26,CreateUserfromAdminNS,NS: Create user without EmailAddress,Demo,User,Demo User,,1,demomanager,1,1,0,1,,,200,OK,errors
+27,CreateUserfromAdminNS,NS: Create user without data,,,,,,,1,1,0,1,,,200,OK,errors
+28,ModifyUserfromAdmin,PS: Modify user with all data,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,2,ModifyManager@guerrillamail.com,1,1,0,1,,,200,OK,updated
+29,ModifyUserfromAdmin,PS: Modify user with Changing firstname,ModifyDemoFirst,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,2,ModifyManager@guerrillamail.com,1,1,0,1,,,200,OK,updated
+30,ModifyUserfromAdmin,PS: Modify user with Changing lastname,ModifyDemo,ModifyDemoLast,Modify DemoUser,modifydemouseremail@guerrillamail.com,2,ModifyManager@guerrillamail.com,1,1,0,1,,,200,OK,updated
+31,ModifyUserfromAdmin,PS: Modify user with Changing emailaddress,ModifyDemo,ModifyUser,Modify DemoUser,modifyexistingemail@guerrillamail.com,2,ModifyManager@guerrillamail.com,1,1,0,1,,,200,OK,updated
+32,ModifyUserfromAdmin,PS: Modify user with Changing manageremail,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,2,ModifyExistingManager@guerrillamail.com,1,1,0,1,,,200,OK,updated
+33,ModifyUserfromAdmin,PS: Modify user with Changing roletypeid,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,,200,OK,updated
+34,ModifyUserfromAdmin,PS: Modify user with privilege Account administrator,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+35,ModifyUserfromAdmin,PS: Modify user with privilege Model administrator,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,2,200,OK,updated
+36,ModifyUserfromAdmin,PS: Modify user with privilege Asset administrator,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,3,200,OK,updated
+37,ModifyUserfromAdmin,PS: Modify user with privilege Credit administrator,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,4,200,OK,updated
+38,ModifyUserfromAdmin,PS: Modify user with privilege User administrator,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,5,200,OK,updated
+39,ModifyUserfromAdmin,PS: Modify user with privilege Benefit on the fly,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,6,200,OK,updated
+40,ModifyUserfromAdmin,NS: Modify user without Firstname,,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+41,ModifyUserfromAdmin,NS: Modify user without Lastname,ModifyDemo,,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+42,ModifyUserfromAdmin,NS: Modify user without Emailaddress,ModifyDemo,ModifyUser,Modify DemoUser,,3,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+43,ModifyUserfromAdmin,NS: Modify user without Manageremail,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,,1,1,0,1,,1,200,OK,updated
+44,ModifyUserfromAdmin,NS: Modify user without roletype,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+45,ModifyUserfromAdmin,NS: Modify user with firstname alone,ModifyDemo,,,,,,1,1,0,1,,1,200,OK,updated
+46,ModifyUserfromAdmin,NS: Modify user with lastname alone,,ModifyUser,,,,,1,1,0,1,,1,200,OK,updated
+47,ModifyUserfromAdmin,NS: Modify user with emailaddress alone,,,,modifydemouseremail@guerrillamail.com,,,1,1,0,1,,1,200,OK,updated
+48,ModifyUserfromAdmin,NS: Modify user with manageremail alone,,,,,,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+49,ModifyUserfromAdmin,NS: Modify user with roletype alone,,,,,4,,1,1,0,1,,1,200,OK,updated
+50,ModifyUserfromAdmin,NS: Modify user without data,,,,,,,1,1,0,1,,1,200,OK,updated
+51,ModifyUserfromAdmin,NS: Modify user with firstname more than 30 chars,DemoFirstNameDemoFirstNameDemoFirstName,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+52,ModifyUserfromAdmin,NS: Modify user with lastname more than 30 chars,ModifyDemo,DemoLastNameDemoLastNameDemoLastName,Modify DemoUser,modifydemouseremail@guerrillamail.com,2,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+53,ModifyUserfromAdmin,NS: Modify user with roletype Sales Representative,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,1,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+54,ModifyUserfromAdmin,NS: Modify user with roletype Sales Support,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,2,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+55,ModifyUserfromAdmin,NS: Modify user with roletype Sales Management,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,3,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+56,ModifyUserfromAdmin,NS: Modify user with roletype Executive Management,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,4,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+57,ModifyUserfromAdmin,NS: Modify user with roletype Value expert,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,5,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+58,ModifyUserfromAdmin,NS: Modify user with roletype Program Management,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,6,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+59,ModifyUserfromAdmin,NS: Modify user with existing email address,ModifyDemo,ModifyUser,Modify DemoUser,SanityTestUser@guerrillamail.com,2,ModifyManager@guerrillamail.com,1,1,0,1,,1,200,OK,updated
+60,ModifyUserPrivilege,PS: Modify user privileges,ModifyDemo,ModifyUser,Modify DemoUser,modifydemouseremail@guerrillamail.com,1,ModifyManager@guerrillamail.com,1,1,0,1,,,200,OK,updated

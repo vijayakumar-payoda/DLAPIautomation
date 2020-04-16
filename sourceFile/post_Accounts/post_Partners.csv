@@ -1,0 +1,27 @@
+Sno,Api,Descriptions,Partnertypename,limit,page,search,sortby,order,ResponseCode,ResponseText,ResponseMessage
+1,CreatePartnerType,PS: Create partnertype with max chars,TestPartnertypeTestPartnertypeTestPartnertypeTestPartnertypeTestPartnertypeTestPartnertypeTestPartnertypeTestPartnertypeTestPartnertypeTestPartnertypeTestPartnertypeTestPartnertype,,,,,,200,result,OK
+2,CreatePartnerType,NS: Create partnertype without name,,,,,,,200,result,OK
+3,CreatePartnerType,NS: Create partnertype with valid name,TestPartnertype,,,,,,200,result,OK
+4,CreatePartnerType,NS: Create partnertype with duplicate name,TestPartnertype,,,,,,200,result,OK
+5,GetPartnersbySearch,PS: Search partners with valid search data,,10,1,all,created,desc,200,,OK
+6,GetPartnersbySearch,NS: Search partners with limit alone,,10,,,,,404,Not Found,OK
+7,GetPartnersbySearch,NS: Search partners with page alone,,,1,,,,404,Not Found,OK
+8,GetPartnersbySearch,NS: Search partners with search alone,,,,all,,,404,Not Found,OK
+9,GetPartnersbySearch,NS: Search partners with sortby alone,,,,,created,,404,Not Found,OK
+10,GetPartnersbySearch,NS: Search partners with order alone,,,,,,desc,404,Not Found,OK
+11,GetPartnersbySearch,NS: Search partners with invalid limit,,abcd,1,all,created,desc,200,null,OK
+12,GetPartnersbySearch,NS: Search partners with invalid page,,10,abcd,all,created,desc,200,null,OK
+13,GetPartnersbySearch,NS: Search partners with invalid search,,10,1,abcd,created,desc,200,null,OK
+14,GetPartnersbySearch,NS: Search partners with invalid sortby,,10,1,all,abcd,desc,200,account_id,OK
+15,GetPartnersbySearch,NS: Search partners with invalid order,,10,1,all,created,abcd,200,null,OK
+16,GetPartnersbySearch,NS: Search partners without limit,,,1,all,created,desc,404,Not Found,OK
+17,GetPartnersbySearch,NS: Search partners  without page,,10,,all,created,desc,404,Not Found,OK
+18,GetPartnersbySearch,NS: Search partners  withoutsearch,,10,1,,created,desc,404,Not Found,OK
+19,GetPartnersbySearch,NS: Search partners  without sortby,,10,1,all,,desc,404,Not Found,OK
+20,GetPartnersbySearch,NS: Search partners  without order,,10,1,all,created,,200,account_id,OK
+21,GetPartnersbySearch,PS: Search partners with changing limit,,20,1,all,created,desc,200,account_id,OK
+22,GetPartnersbySearch,PS: Search partners with changing page,,10,2,all,created,desc,200,account_id,OK
+23,GetPartnersbySearch,PS: Search partners with changing search,,10,1,abc,created,desc,200,account_id,OK
+24,GetPartnersbySearch,PS: Search partners with changing sortby,,10,1,all,name,desc,200,account_id,OK
+25,GetPartnersbySearch,PS: Search partners with changing order,,10,1,all,created,asc,200,account_id,OK
+26,GetPartnersbySearch,NS: Search partners without data,,,,,,,404,Not Found,OK

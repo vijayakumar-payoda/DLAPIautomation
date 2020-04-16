@@ -1,0 +1,12 @@
+Sno,Api,Descriptions,Subtype_name1,Subtype_name2,Subtype_name3,Subtype_name4,driver_value,improvement_value,financial_value1,financial_value2,financial_value3,financial_value4,Responsecode,ResponseText,ResponseMessage
+1,Createfactorsubtype,PS: Create drive factor subtype with Subtypename1,Executives,,,,1,200,500000,,,,200,value_prop_metric_id,OK
+2,Createfactorsubtype,PS: Create drive factor subtype with Subtypename2,,Management,,,1,200,,150000,,,200,value_prop_metric_id,OK
+3,Createfactorsubtype,PS: Create drive factor subtype with Subtypename3,,,Individual Contributor,,1,200,,,75000,,200,value_prop_metric_id,OK
+4,Createfactorsubtype,PS: Create drive factor subtype with Subtypename4,,,,Test Subtype,1,200,,,,250000,200,value_prop_metric_id,OK
+5,Createfactorsubtype,PS: Create driver factor subtype with all subtypes,Executives,Management,Individual Contributor,Test Subtype,1,200,500000,150000,75000,250000,200,value_prop_metric_id,OK
+6,Createfactorsubtype,NS: Create driver factor subtype with invalid driver value,Executives,Management,Individual Contributor,Test Subtype,abcd,200,500000,150000,75000,250000,200," ""subtypes"":false",OK
+7,Createfactorsubtype,NS: Create driver factor subtype with without driver value,Executives,Management,Individual Contributor,Test Subtype,,200,500000,150000,75000,250000,200," ""subtypes"":false",OK
+8,Createfactorsubtype,NS: Create driver factor subtype with invalid improvement value,Executives,Management,Individual Contributor,Test Subtype,1,abcd,500000,150000,75000,250000,200,value_prop_metric_id,OK
+9,Createfactorsubtype,NS: Create driver factor subtype without improvement value,Executives,Management,Individual Contributor,Test Subtype,1,,500000,150000,75000,250000,200,value_prop_metric_id,OK
+10,Createfactorsubtype,NS: Create driver factor subtype with invalid financial value,Executives,Management,Individual Contributor,Test Subtype,1,200,abcd,abcd,abcd,abcd,200," ""subtypes"":false",OK
+11,Createfactorsubtype,NS: Create driver factor subtype without financial value,Executives,Management,Individual Contributor,Test Subtype,1,200,,,,,200," ""subtypes"":false",OK

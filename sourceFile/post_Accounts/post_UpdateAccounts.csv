@@ -1,0 +1,4 @@
+Sno,Api,Description,CompetitorName,CompetitorDescription,limit,page,search,sortby,order,PartnerID,Scalername,ScalerDescription,ScalerCompanyfield,AssertResponseCode
+1,UpdateCompetitor,Modifies Competitorname  and description,UpdateCompetitor,Modified description,10,1,all,created,desc,,,,,200
+2,UpdatePartner,Modifies Partner Details,,,10,1,all,created,desc,22,,,,200
+3,UpdateMasterscaler,Modifies Scaler Details,,,,,,,,,UpdateSCaler,UpdateScalerDescription,UpdateCompany,200

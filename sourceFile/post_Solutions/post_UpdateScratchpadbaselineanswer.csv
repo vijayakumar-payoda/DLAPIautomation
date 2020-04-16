@@ -1,0 +1,10 @@
+Sno,Api,Descriptions,value,min,max,increment,ResponseCode,ResponseMessage,ResponseText
+1,UpdateBaselineAnswer,PS: Update baseline answer with valid data,1000,10,1000,1,200,OK,scratchpad unit updated successfully
+2,UpdateBaselineAnswer,NS: Update baseline answer with invalid value,abcd,10,1000,1,200,OK,scratchpad unit updated successfully
+3,UpdateBaselineAnswer,NS: Update baseline answer without  value,,10,1000,1,200,OK,scratchpad unit updated successfully
+4,UpdateBaselineAnswer,NS: Update baseline answer with invalid min value,1000,abcd,1000,1,200,OK,scratchpad unit updated successfully
+5,UpdateBaselineAnswer,NS: Update baseline answer without min value,1000,,1000,1,200,OK,scratchpad unit updated successfully
+6,UpdateBaselineAnswer,NS: Update baseline answer with invalid max value,1000,10,abcd,1,200,OK,scratchpad unit updated successfully
+7,UpdateBaselineAnswer,NS: Update baseline answer without max value,1000,10,,1,200,OK,scratchpad unit updated successfully
+8,UpdateBaselineAnswer,NS: Update baseline answer with invalid increment value,1000,10,1000,abcd,200,OK,scratchpad unit updated successfully
+9,UpdateBaselineAnswer,NS: Update baseline answer with without increment value,1000,10,1000,,200,OK,scratchpad unit updated successfully

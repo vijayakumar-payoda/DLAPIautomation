@@ -1,0 +1,8 @@
+Sno,Api,Descriptions,driver_value,improvement_value,financial_value,ResponseCode,ResponseMessage,ResponseText
+1,createDriverFactorSubtypes,PS: Create driverfactor subytpe with valid data,100,2,400,200,OK,driver_factor_id
+2,createDriverFactorSubtypes,NS: Create driverfactor subtype with invalid driver_value,abcd,2,400,200,OK,null
+3,createDriverFactorSubtypes,NS: Create driverfactor subtype without invalid driver_value,,2,400,200,OK,driver_factor_id
+4,createDriverFactorSubtypes,NS: Create driverfactor subtype with invalid improvement_value,100,abcd,400,200,OK,null
+5,createDriverFactorSubtypes,NS: Create driverfactor subtype without  improvement_value,100,,400,200,OK,driver_factor_id
+6,createDriverFactorSubtypes,NS: Create driverfactor subtype with invalid financial_value,100,2,abcd,200,OK,null
+7,createDriverFactorSubtypes,NS: Create driverfactor subtype without  financial_value,100,2,,200,OK,driver_factor_id

@@ -1,0 +1,15 @@
+Sno,Api,Descriptions,StartDate,EndDate,ResponseCode,ResponseText,ResponseMessage
+1,UserAdoptionReport,PS: Get UserAdoption report with past start and end date,2018-11-02 02:00:05,2019-08-02 02:00:05,200,user_id,OK
+2,UserAdoptionReport,PS: Get UserAdoption report with past start and present end date,2018-11-02 02:00:05,2019-11-25 15:45:01,200,user_id,OK
+3,UserAdoptionReport,PS: Get UserAdoption report with past start and future end date,2018-11-02 02:00:05,2019-12-25 15:45:01,200,user_id,OK
+4,UserAdoptionReport,PS: Get UserAdoption report with Present start and end date,2019-11-25 15:45:01,2019-11-25 18:45:01,200,[],OK
+5,UserAdoptionReport,NS: Get UserAdoption report with present start and future end date,2019-11-25 15:45:01,2019-12-25 15:45:01,200,[],OK
+6,UserAdoptionReport,NS: Get UserAdoption report with present start and past end date,2019-11-25 15:45:01,2018-11-02 02:00:05,200,[],OK
+7,UserAdoptionReport,NS: Get UserAdoption report with future start and future end date,2019-12-25 15:45:01,2020-12-25 15:45:01,200,[],OK
+8,UserAdoptionReport,NS: Get UserAdoption report with future start and present end date,2020-12-25 15:45:01,2019-11-25 15:45:01,200,[],OK
+9,UserAdoptionReport,NS: Get UserAdoption report with future start and past end date,2020-12-25 15:45:01,2018-11-02 02:00:05,200,[],OK
+10,UserAdoptionReport,PS: Get UserAdoption report with valid start date and End date ,2018-11-02 02:00:05,2019-12-25 15:45:01,200,user_id,OK
+11,UserAdoptionReport,NS: Get UserAdoption report with valid start date and invalid end date,2018-11-02 02:00:05,abcd,200,[],OK
+12,UserAdoptionReport,PS: Get UserAdoption report with invalid start date and valid end date,abcd,2019-12-25 15:45:01,200,user_id,OK
+13,UserAdoptionReport,NS: Get UserAdoption report with invalid start date and end date,abcd,abcd,200,[],OK
+14,UserAdoptionReport,PS: Get UserAdoption report – Get all data,,,200,user_id,OK

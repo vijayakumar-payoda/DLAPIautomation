@@ -1,0 +1,7 @@
+Sno,Api,Descriptions,assetid,,ResponseCode,ResponseMessage,ResponseText
+1,ReadAccntSolutionAssets,PS: with valid value of asset newly created with asset type id 3,25454,,200,OK,value brief
+2,ReadAccntSolutionAssets,PS: with valid value of asset newly created with asset type id 1,25401,,200,OK,Executive value tearsheet
+3,ReadAccntSolutionAssets,PS: with valid value of asset newly created with asset type id 5,25275,,200,OK,value worksheet
+4,ReadAccntSolutionAssets,NS: with asset id as given in postman,1074,,200,OK,
+5,ReadAccntSolutionAssets,NS: with empty asset id,,,200,OK,
+6,ReadAccntSolutionAssets,NS: with invalid asset id,abc123,,200,OK,

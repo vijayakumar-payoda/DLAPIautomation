@@ -1,0 +1,15 @@
+Sno,Api,Descriptions,factortype_id,action,ResponseCode,ResponseMessage,ResponseText
+1,CreateKeyAssumption_create,PS: Create KeyAssumption with valid data,4,Create,200,OK,true
+2,CreateKeyAssumption_create,NS: Create KeyAssumption with invalid factortype_id,abcd,Create,200,OK,null
+3,CreateKeyAssumption_create,NS: Create KeyAssumption with invalid action,4,abcd,200,OK,null
+4,CreateKeyAssumption_create,NS: Create KeyAssumption without factortype_id,,Create,200,OK,null
+5,CreateKeyAssumption_create,NS: Create KeyAssumption without action,4,,200,OK,null
+6,CreateKeyAssumption_create,NS: Create KeyAssumption with invalid action and factortype_id,abcd,abcd,200,OK,null
+7,CreateKeyAssumption_create,NS: Create KeyAssumption without action and factortype_id,,,200,OK,null
+8,CreateKeyAssumption_delete,PS: Create KeyAssumption with valid data,4,Delete,200,OK,true
+9,CreateKeyAssumption_delete,NS: Create KeyAssumption with invalid factortype_id,abcd,Delete,200,OK,null
+10,CreateKeyAssumption_delete,NS: Create KeyAssumption with invalid action,4,abcd,200,OK,null
+11,CreateKeyAssumption_delete,NS: Create KeyAssumption without factortype_id,,Delete,200,OK,null
+12,CreateKeyAssumption_delete,NS: Create KeyAssumption without action,4,,200,OK,null
+13,CreateKeyAssumption_delete,NS: Create KeyAssumption with invalid action and factortype_id,abcd,abcd,200,OK,null
+14,CreateKeyAssumption_delete,NS: Create KeyAssumption without action and factortype_id,,,200,OK,null

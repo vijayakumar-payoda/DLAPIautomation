@@ -1,0 +1,13 @@
+Sno,Api,Descriptions,Title,Quote,Contact_FirstName,Contact_LastName,ResponseCode,ResponseMessage,ResponseText
+1,AddTestimonialQuote,PS: Add Testimonial quote with valid data,Testing,TestQuote,TestFirst,TestLast,200,OK,Quote has been added to the case study successfully
+2,AddTestimonialQuote,NS: Add Testimonial quote without title,,TestQuote,TestFirst,TestLast,200,OK,Quote has been added to the case study successfully
+3,AddTestimonialQuote,NS: Add Testimonial quote without quote,Testing,,TestFirst,TestLast,200,OK,Quote has been added to the case study successfully
+4,AddTestimonialQuote,NS: Add Testimonial quote without contact Firstname,Testing,TestQuote,,TestLast,200,OK,Quote has been added to the case study successfully
+5,AddTestimonialQuote,NS: Add Testimonial quote without contact Lastname,Testing,TestQuote,TestFirst,,200,OK,Quote has been added to the case study successfully
+6,AddTestimonialQuote,NS: Add Testimonial quote without any data,,,,,200,OK,Quote has been added to the case study successfully
+7,UpdateTestimonialQuote,PS: Update Testimonial quote with valid data,ModifyTesting,ModifyTestQuote,ModifyTestFirst,ModifyTestLast,200,OK,Quote has been updated to the case study successfully
+8,UpdateTestimonialQuote,NS: Update Testimonial quote without title,,ModifyTestQuote,ModifyTestFirst,ModifyTestLast,200,OK,Quote has been updated to the case study successfully
+9,UpdateTestimonialQuote,NS: Update Testimonial quote without quote,ModifyTesting,,ModifyTestFirst,ModifyTestLast,200,OK,Quote has been updated to the case study successfully
+10,UpdateTestimonialQuote,NS: Update Testimonial quote without Contact Firstname,ModifyTesting,ModifyTestQuote,,ModifyTestLast,200,OK,Quote has been updated to the case study successfully
+11,UpdateTestimonialQuote,NS: Update Testimonial quote without Contact Lastname,ModifyTesting,ModifyTestQuote,ModifyTestFirst,,200,OK,Quote has been updated to the case study successfully
+12,UpdateTestimonialQuote,NS: Update Testimonial quote without any data,,,,,200,OK,Quote has been updated to the case study successfully

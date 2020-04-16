@@ -1,0 +1,15 @@
+Sno,Api,Descriptions,CompetitorDescription,Landmines,Theyll_say,Their_Landmines,Our_response,ResponseCode,ResponseMessage,ResponseText
+1,CreatenewCompetitor,PS: Create a competitor with valid data,TestDescription,TestLandmines,Test_Theyll_say,Test_Their_Landmines,Test_Our_response,200,OK,result
+2,CreatenewCompetitor,NS: Create a competitor without description,,TestLandmines,Test_Theyll_say,Test_Their_Landmines,Test_Our_response,200,OK,result
+3,CreatenewCompetitor,PS: Create a competitor without landmines,TestDescription,,Test_Theyll_say,Test_Their_Landmines,Test_Our_response,200,OK,result
+4,CreatenewCompetitor,PS: Create a competitor without Theyll_say,TestDescription,TestLandmines,,Test_Their_Landmines,Test_Our_response,200,OK,result
+5,CreatenewCompetitor,PS: Create a competitor without Their_Landmines,TestDescription,TestLandmines,Test_Theyll_say,,Test_Our_response,200,OK,result
+6,CreatenewCompetitor,PS: Create a competitor without Our_response,TestDescription,TestLandmines,Test_Theyll_say,Test_Their_Landmines,,200,OK,result
+7,CreatenewCompetitor,PS: Create a competitor with name and description alone,TestDescription,,,,,200,OK,result
+8,UpdatenewCompetitor,PS: Updates competitor with valid data,UpdateDescription,UpdateLandmines,Update_Theyll_say,Update_Their_Landmines,Update_Our_response,200,OK,Account Solution Competitor has been updated successfully
+9,UpdatenewCompetitor,NS: Updates competitor without description,,UpdateLandmines,Update_Theyll_say,Update_Their_Landmines,Update_Our_response,200,OK,Account Solution Competitor has been updated successfully
+10,UpdatenewCompetitor,PS: Updates competitor without landmines,UpdateDescription,,Update_Theyll_say,Update_Their_Landmines,Update_Our_response,200,OK,Account Solution Competitor has been updated successfully
+11,UpdatenewCompetitor,PS: Updates competitor without Theyll_say,UpdateDescription,UpdateLandmines,,Update_Their_Landmines,Update_Our_response,200,OK,Account Solution Competitor has been updated successfully
+12,UpdatenewCompetitor,PS: Updates competitor without Their_Landmines,UpdateDescription,UpdateLandmines,Update_Theyll_say,,Update_Theyll_say,200,OK,Account Solution Competitor has been updated successfully
+13,UpdatenewCompetitor,PS: Updates competitor without Our_response,UpdateDescription,UpdateLandmines,Update_Theyll_say,Update_Theyll_say,,200,OK,Account Solution Competitor has been updated successfully
+14,UpdatenewCompetitor,PS: Updates competitor with name and description alone,UpdateDescription,,,,,200,OK,Account Solution Competitor has been updated successfully

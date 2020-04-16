@@ -1,0 +1,8 @@
+Sno,Api,Descriptions,limit,page,ResponseCode,ResponseMessage,ResponseText
+1,Realizingcasestudies,PS: Realizing the most recent case studies using valid data,10,1,200,OK,account_solution_id
+2,Realizingcasestudies,NS: Realizing the most recent case studies using invalid limit,abcd,1,200,OK,[]
+3,Realizingcasestudies,NS: Realizing the most recent case studies  without limit,,1,404,Not Found,The requested URL was not found on this server.
+4,Realizingcasestudies,NS: Realizing the most recent case studies using invalid page,10,abcd,200,OK,[]
+5,Realizingcasestudies,NS: Realizing the most recent case studies without page,10,,200,OK,account_solution_id
+6,Realizingcasestudies,NS: Realizing the most recent case studies using invalid limit and page,abcd,abcd,200,OK,[]
+7,Realizingcasestudies,NS: Realizing the most recent case studies without limit and page,,,404,Not Found,The requested URL was not found on this server.

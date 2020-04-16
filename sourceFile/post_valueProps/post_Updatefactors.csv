@@ -1,0 +1,2 @@
+Sno,Api,Descriptions,driver_value1,driver_sourcetypeid1,driver_value2,driver_sourcetypeid2,driver_value3,driver_sourcetypeid3,driver_value4,driver_sourcetypeid4,driver_value5,driver_sourcetypeid5,ResponseCode,ResponseText,ResponseMessage
+1,UpdatefactorsinBulk,PS: Update factors with valid  data,1000,1,2000,2,3000,3,4000,4,5000,5,200,account_solution_metric_id,OK

@@ -1,0 +1,20 @@
+Sno,Api,Descriptions,baseline_type_id,customer_type_id,deployment_time,gross_profit,currency_type_id,number_format,conversion_rate,term,wacc,ResponseCode,ResponseText,ResponseMessage
+1,UpdatevaluePropAdvanced,Update valueProp advanced with invalid baselinetype,abcd,1,8,15,144,1,2,5,6,200,company_id,OK
+2,UpdatevaluePropAdvanced,Update valueProp advanced with invalid customertype,1,abcd,8,15,144,1,2,5,6,200,company_id,OK
+3,UpdatevaluePropAdvanced,Update valueProp advanced with invalid deploymenttime,1,1,abcd,15,144,1,2,5,6,200,company_id,OK
+4,UpdatevaluePropAdvanced,Update valueProp advanced with invalid gross profit,1,1,8,abcd,144,1,2,5,6,200,company_id,OK
+5,UpdatevaluePropAdvanced,Update valueProp advanced with invalid currencytype,1,1,8,15,abcd,1,2,5,6,200,company_id,OK
+6,UpdatevaluePropAdvanced,Update valueProp advanced with invalid numberformat,1,1,8,15,144,abcd,2,5,6,200,company_id,OK
+7,UpdatevaluePropAdvanced,Update valueProp advanced with invalid conversionrate,1,1,8,15,144,1,abcd,5,6,200,company_id,OK
+8,UpdatevaluePropAdvanced,Update valueProp advanced with invalid term,1,1,8,15,144,1,2,abcd,6,200,company_id,OK
+9,UpdatevaluePropAdvanced,Update valueProp advanced with invalid wacc,1,1,8,15,144,1,2,5,abcd,200,company_id,OK
+10,UpdatevaluePropAdvanced,Update valueProp advanced without baselinetype,,1,8,15,144,1,2,5,6,200,company_id,OK
+11,UpdatevaluePropAdvanced,Update valueProp advanced without customertype,1,,8,15,144,1,2,5,6,200,company_id,OK
+12,UpdatevaluePropAdvanced,Update valueProp advanced without deploymenttime,1,1,,15,144,1,2,5,6,200,company_id,OK
+13,UpdatevaluePropAdvanced,Update valueProp advanced without gross profit,1,1,8,,144,1,2,5,6,200,company_id,OK
+14,UpdatevaluePropAdvanced,Update valueProp advanced without currencytype,1,1,8,15,,1,2,5,6,200,company_id,OK
+15,UpdatevaluePropAdvanced,Update valueProp advanced without numberformat,1,1,8,15,144,,2,5,6,200,company_id,OK
+16,UpdatevaluePropAdvanced,Update valueProp advanced without conversionrate,1,1,8,15,144,1,,5,6,200,company_id,OK
+17,UpdatevaluePropAdvanced,Update valueProp advanced without term,1,1,8,15,144,1,2,,6,200,company_id,OK
+18,UpdatevaluePropAdvanced,Update valueProp advanced without wacc,1,1,8,15,144,1,2,5,,200,company_id,OK
+19,UpdatevaluePropAdvanced,Update valueProp advanced with valid data,1,1,8,15,144,1,2,5,6,200,company_id,OK

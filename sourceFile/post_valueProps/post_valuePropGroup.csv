@@ -1,0 +1,21 @@
+Sno,Api,Descriptions,Company_id,group_type_id,is_value_prop ,valueProp_name,share_id,share_role_type_id,ResponseCode,ResponseText,ResponseMessage
+1,CreatevaluePropGroup,NS: Create valueProp group with valid company id and invalid group id,10,abcd,,,,,200,[],OK
+2,CreatevaluePropGroup,NS: Create valueProp group with invalid company id and valid group id,abcd,1,,,,,200,[],OK
+3,CreatevaluePropGroup,NS: Create valueProp group with invalid company id and invalid group id,abcd,abcd,,,,,200,[],OK
+4,CreatevaluePropGroup,NS: Create valueProp group without company id,,1,,,,,200,[],OK
+5,CreatevaluePropGroup,NS: Create valueProp group without group id,10,,,,,,200,[],OK
+6,CreatevaluePropGroup,PS: Create valueProp group with valid company id and group id,10,1,,,,,200,company_id,OK
+7,CreatevalueProp,NS: Create valueProp with invalid company id,abcd,1,false,Walter Energy,,,200,company_id,OK
+8,CreatevalueProp,NS: Create valueProp with invalid is_valueProp,10,1,abcd,Walter Energy,,,200,company_id,OK
+9,CreatevalueProp,NS: Create valueProp without company id,,1,false,Walter Energy,,,200,company_id,OK
+10,CreatevalueProp,NS: Create valueProp without is_valueProp,10,1,,Walter Energy,,,200,company_id,OK
+11,CreatevalueProp,PS: Create valueProp with valid data,10,,false,Walter Energy,,,200,company_id,OK
+12,UpdatevalueProp,PS: Update valueProp group with valid name,,1,,Walter Energy_PropGroup,,,200,company_id,OK
+13,ClonevaluePropGroup,PS: Clones valueProp group with valid name,,,,Clone_Walter Energy_PropGroup,,,200,company_id,OK
+14,SharevaluePropGroup,PS: Share valueProp group with valid user1,,,,,52577,1,200,1,OK
+15,SharevaluePropGroup,PS: Share valueProp group with valid user2,,,,,52576,1,200,1,OK
+16,SharevaluePropGroup,NS: Share valueProp group with invalid share id,,,,,abcd,1,200,false,OK
+17,SharevaluePropGroup,NS: Share valueProp group without share id,,,,,,1,200,false,OK
+18,SharevaluePropGroup,NS: Share valueProp group with invalid share role type id,,,,,52577,abcd,200,1,OK
+19,SharevaluePropGroup,NS: Share valueProp group without  share role type id,,,,,52577,,200,1,OK
+20,SharevaluePropGroup,NS: Share valueProp group without  share id and share role type id,,,,,,,200,false,OK

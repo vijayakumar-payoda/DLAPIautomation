@@ -1,0 +1,14 @@
+Sno,Api,Descriptions,Searchdata,Limit,Page,ResponseCode,ResponseText,ResponseMessage
+1,ReadFaqs,PS: Reads all Faqs,all,20,1,200,question,OK
+2,ReadFaqs,PS: Read faqs with valid inputs,reset,10,1,200,question,OK
+3,ReadFaqs,PS: Read faqs with valid search content,reset,10,1,200,question,OK
+4,ReadFaqs,PS: Read faqs with valid limit,all,5,2,200,question,OK
+5,ReadFaqs,PS: Read faqs with valid page,all,3,3,200,question,OK
+6,ReadFaqs,NS: Read faqs with empty search content,,10,1,404,Not Found,Not Found
+7,ReadFaqs,NS: Read faqs with empty limit,reset,,1,404,Not Found,Not Found
+8,ReadFaqs,NS: Read faqs with empty page,reset,10,,200,question,OK
+9,ReadFaqs,NS: Read faqs with invalid search content,abcd,10,1,200,[],OK
+10,ReadFaqs,NS: Read faqs with invalid limit,reset,abcd,1,200,[],OK
+11,ReadFaqs,NS: Read faqs with invalid page,reset,10,abcd,200,[],OK
+12,ReadFaqs,NS: Read faqs with invalid inputs,abcd,abcd,abcd,200,[],OK
+13,ReadFaqs,NS: Read faqs with search content contains spaces,reset password,10,1,404,Not Found,Not Found

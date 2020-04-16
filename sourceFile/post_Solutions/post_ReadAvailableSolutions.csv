@@ -1,0 +1,14 @@
+Sno,Api,Descriptions,limit,page,search,sortby,order,ResponseCode,ResponseMessage,ResponseText
+1,ReadAvailableSolutions,PS: Read available solutions using valid data,5,1,all,name,asc,200,OK,account_id
+2,ReadAvailableSolutions,NS: Read available solutions using invalid limit,abcd,1,all,name,asc,200,OK,[]
+3,ReadAvailableSolutions,NS: Read available solutions without limit,,1,all,name,asc,404,Not Found,The requested URL was not found on this server
+4,ReadAvailableSolutions,NS: Read available solutions using invalid page,5,abcd,all,name,asc,200,OK,[]
+5,ReadAvailableSolutions,NS: Read available solutions without page,5,,all,name,asc,404,Not Found,The requested URL was not found on this server
+6,ReadAvailableSolutions,NS: Read available solutions using invalid search,5,1,abcd,name,asc,200,OK,[]
+7,ReadAvailableSolutions,NS: Read available solutions without search,5,1,,name,asc,404,Not Found,The requested URL was not found on this server
+8,ReadAvailableSolutions,NS: Read available solutions using invalid sortby,5,1,all,abcd,asc,200,OK,[]
+9,ReadAvailableSolutions,NS: Read available solutions without sortby,5,1,all,,asc,404,Not Found,The requested URL was not found on this server
+10,ReadAvailableSolutions,NS: Read available solutions using invalid order,5,1,all,name,abcd,200,OK,[]
+11,ReadAvailableSolutions,NS: Read available solutions without order,5,1,all,name,,200,OK,account_id
+12,ReadAvailableSolutions,NS: Read available solutions using invalid data,abcd,abcd,abcd,abcd,abcd,200,OK,[]
+13,ReadAvailableSolutions,NS: Read available solutions without data,,,,,,404,Not Found,The requested URL was not found on this server

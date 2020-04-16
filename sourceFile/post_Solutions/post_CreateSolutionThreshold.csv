@@ -1,0 +1,11 @@
+Sno,Api,Descriptions,Threshold_type_id,Min,Max,Margin,ResponseCode,ResponseMessage,ResponseText
+1,CreateSolutionThreshold,PS: Create solution threshold with valid data,1,10,50,1,200,OK,account_solution_id
+2,CreateSolutionThreshold,NS: Create solution threshold with invalid threshold_type,abcd,10,50,1,200,OK,account_solution_id
+3,CreateSolutionThreshold,NS: Create solution threshold without threshold_type,,10,50,1,200,OK,account_solution_id
+4,CreateSolutionThreshold,NS: Create solution threshold with invalid min value,1,abcd,50,1,406,Not Acceptable,Not Acceptable
+5,CreateSolutionThreshold,NS: Create solution threshold with invalid max value,1,1,abcd,1,406,Not Acceptable,Not Acceptable
+6,CreateSolutionThreshold,NS: Create solution threshold without min value,1,,50,1,406,Not Acceptable,Not Acceptable
+7,CreateSolutionThreshold,NS: Create solution threshold without max value,1,10,,1,406,Not Acceptable,Not Acceptable
+8,CreateSolutionThreshold,NS: Create solution threshold with invalid margin value,1,10,50,abcd,406,Not Acceptable,Not Acceptable
+9,CreateSolutionThreshold,NS: Create solution threshold without margin value,1,10,50,,406,Not Acceptable,Not Acceptable
+10,CreateSolutionThreshold,NS: Create solution threshold without any value,,,,,406,Not Acceptable,Not Acceptable

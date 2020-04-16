@@ -1,0 +1,27 @@
+Sno,Api,Descriptions,company_id,improvementvalue1,improvement_type_id1,improvementvalue2,improvement_type_id2,account_solution_metric_id1,account_solution_metric_id2,ResponseCode,ResponseMessage,ResponseText
+1,Addbenefits,PS: Add benefits to Realization using valid data,10,100,1,100,1,550,543,200,OK,Benefits has been added successfully to case study
+2,Addbenefits,NS: Add benefits to Realization using invalid companyid,abcd,100,1,100,1,550,543,200,OK,Something bad happened. Please try again later
+3,Addbenefits,NS: Add benefits to Realization without companyid,,100,1,100,1,550,543,200,OK,Something bad happened. Please try again later
+4,Addbenefits,NS: Add benefits to Realization using invalid improvementvalue1,10,abcd,1,100,1,550,543,200,OK,Benefits has been added successfully to case study
+5,Addbenefits,NS: Add benefits to Realization without improvementvalue1,10,,1,100,1,550,543,200,OK,Benefits has been added successfully to case study
+6,Addbenefits,NS: Add benefits to Realization using invalid improvementtypeid1,10,100,abcd,100,1,550,543,200,OK,Benefits has been added successfully to case study
+7,Addbenefits,NS: Add benefits to Realization without improvementtypeid1,10,100,,100,1,550,543,200,OK,Benefits has been added successfully to case study
+8,Addbenefits,NS: Add benefits to Realization using invalid improvementvalue2,10,100,1,abcd,1,550,543,200,OK,Something bad happened. Please try again later
+9,Addbenefits,NS: Add benefits to Realization without improvementvalue2,10,100,1,,1,550,543,200,OK,Something bad happened. Please try again later
+10,Addbenefits,NS: Add benefits to Realization using invalid improvementtypeid2,10,100,1,100,abcd,550,543,200,OK,Something bad happened. Please try again later
+11,Addbenefits,NS: Add benefits to Realization without improvementtypeid2,10,100,1,100,,550,543,200,OK,Something bad happened. Please try again later
+12,Addbenefits,NS: Add benefits to Realization using invalid account_solution_metric_id1,10,100,1,100,1,abcd,543,200,OK,Benefits has been added successfully to case study
+13,Addbenefits,NS: Add benefits to Realization without account_solution_metric_id1,10,100,1,100,1,,543,200,OK,Benefits has been added successfully to case study
+14,Addbenefits,NS: Add benefits to Realization using invalid account_solution_metric_id2,10,100,1,100,1,550,abcd,200,OK,Something bad happened. Please try again later
+15,Addbenefits,NS: Add benefits to Realization without account_solution_metric_id2,10,100,1,100,1,550,,200,OK,Something bad happened. Please try again later
+16,Addbenefits,NS: Add benefits to Realization using invalid data,abcd,abcd,abcd,abcd,abcd,abcd,abcd,200,OK,Something bad happened. Please try again later
+17,Addbenefits,NS: Add benefits to Realization without any data,,,,,,,,200,OK,Something bad happened. Please try again later
+18,UpdateBenefits,PS: Update benefit using valid data,10,1000,2,,,,,200,OK,case_study_id
+19,UpdateBenefits,NS: Update benefit using invalid improvementvalue,10,abcd,2,,,,,200,OK,case_study_id
+20,UpdateBenefits,NS: Update benefit without improvementvalue,10,,2,,,,,200,OK,case_study_id
+21,UpdateBenefits,NS: Update benefit using invalid improvementtypeid,10,1000,abcd,,,,,200,OK,case_study_id
+22,UpdateBenefits,NS: Update benefit without  improvementtypeid,10,1000,,,,,,200,OK,case_study_id
+23,UpdateBenefits,NS: Update benefit using invalid companyid,abcd,1000,2,,,,,200,OK,case_study_id
+24,UpdateBenefits,NS: Update benefit without companyid,,1000,2,,,,,200,OK,case_study_id
+25,UpdateBenefits,NS: Update benefit using invalid data,abcd,abcd,abcd,,,,,200,OK,case_study_id
+26,UpdateBenefits,NS: Update benefit without data,,,,,,,,200,OK,case_study_id

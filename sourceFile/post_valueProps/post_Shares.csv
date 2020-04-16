@@ -1,0 +1,4 @@
+Sno,Api,Descriptions,Share_Id,Share_RoleType_Id,ResponseCode,ResponseText,ResponseMessage
+1,Updateshare,PS: Update share with valid data,501,2,200,value_prop_share,OK
+2,Updateshare,NS: Update share with invalid share roletype id,501,abcd,200,value_prop_share,OK
+3,Updateshare,NS: Update share without share roletype id,501,,200,value_prop_share,OK

@@ -1,0 +1,8 @@
+Sno,Api,Descriptions,company_id,redacted,tag,ResponseCode,ResponseMessage,ResponseText
+1,CreateCaseStudy,PS: Create Realization CaseStudy using valid data,10,1,Test CaseStudy,200,OK,Case study has been created successfully
+2,CreateCaseStudy,NS: Create Realization CaseStudy using invalid company_id,abcd,1,Test CaseStudy,200,OK,Something bad happened. Please try again later
+3,CreateCaseStudy,NS: Create Realization CaseStudy without company_id,,1,Test CaseStudy,200,OK,Something bad happened. Please try again later
+4,CreateCaseStudy,NS: Create Realization CaseStudy using invalid redacted value,10,abcd,Test CaseStudy,200,OK,Something bad happened. Please try again later
+5,CreateCaseStudy,NS: Create Realization  CaseStudy without redacted value,10,,Test CaseStudy,200,OK,Something bad happened. Please try again later
+6,CreateCaseStudy,NS: Create Realization CaseStudy using invalid company_id and redacted value,abcd,abcd,Test CaseStudy,200,OK,Something bad happened. Please try again later
+7,CreateCaseStudy,NS: Create Realization CaseStudy without  company_id and redacted value,,,Test CaseStudy,200,OK,Something bad happened. Please try again later

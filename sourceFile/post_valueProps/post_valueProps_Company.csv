@@ -1,0 +1,12 @@
+Sno,Api,Descriptions,industry_sector_id,industry_id,country_id,net_sales,country,ResponseCode,ResponseText,ResponseMessage
+1,CreateCompany,Create company using valid data,106,10600,76,120,United States,200,dl_industry_id,OK
+2,CreateCompany,Create company using invalid industry_sector_id,abcd,10600,76,120,United States,200,dl_industry_id,OK
+3,CreateCompany,Create company without  industry_sector_id,,10600,76,120,United States,200,dl_industry_id,OK
+4,CreateCompany,Create company using invalid industry_id,106,abcd,76,120,United States,200,dl_industry_id,OK
+5,CreateCompany,Create company without  industry_id,106,,76,120,United States,200,dl_industry_id,OK
+6,CreateCompany,Create company using invalid country_id,106,10600,abcd,120,United States,200,dl_industry_id,OK
+7,CreateCompany,Create company without  country_id,106,10600,,120,United States,200,dl_industry_id,OK
+8,CreateCompany,Create company using invalid net_sales,106,10600,76,abcd,United States,200,Company name already exists,OK
+9,CreateCompany,Create company without net_sales,106,10600,76,,United States,200,Company name already exists,OK
+10,CreateCompany,Create company using invalid country,106,10600,76,120,abcd,200,dl_industry_id,OK
+11,CreateCompany,Create company without country,106,10600,76,120,,200,dl_industry_id,OK

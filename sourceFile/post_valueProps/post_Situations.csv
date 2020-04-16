@@ -1,0 +1,9 @@
+Sno,Api,Descriptions,situation_type1_id,situation_element_id1,situation_type2_id,situation_element_id2,situation_type3_id,situation_element_id3,situation_type4_id,situation_element_id4,ResponseCode,ResponseText,ResponseMessage
+1,Createsituation,PS: Create situation with valid data,2,63,1,179,4,11900,3,194,200,situation_type_id,OK
+2,Createsituation,PS: Create situation with situationtype1 alone,2,63,,,,,,,200,situation_type_id,OK
+3,Createsituation,PS: Create situation with situationtype2 alone,,,1,179,,,,,200,situation_type_id,OK
+4,Createsituation,PS: Create situation with situationtype3 alone,,,,,4,11900,,,200,situation_type_id,OK
+5,Createsituation,PS: Create situation with situationtype4 alone,,,,,,,3,194,200,situation_type_id,OK
+6,Createsituation,PS: Create situation with no situationtype selected,,,,,,,,,200,situation_type_id,OK
+7,Createsituation,NS: Create situation with invalid situationtype id,abcd,63,,,,,,,200,situation_type_id,OK
+8,Createsituation,NS: Create situation with invalid situationelement id,2,abcd,,,,,,,200,situation_type_id,OK

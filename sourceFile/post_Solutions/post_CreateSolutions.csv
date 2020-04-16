@@ -1,0 +1,9 @@
+Sno,Api,Descriptions,Modeldescription,averagedeploymenttime,typicaldeploymenttype,quantityenabled,averagesalesprice,averagesalescycle,ResponseCode,ResponseMessage,ResponseText
+1,CreateSolution,PS: Create a solution with valid data,Demo Description,6,0,0,1000,10,200,OK,solution_category_id
+2,CreateSolution,PS: Create a solution without description,,6,0,0,1000,10,200,OK,solution_category_id
+3,CreateSolution,NS: Create a solution with invalid average deployment time,Demo Description,abcd,0,0,2000,20,200,OK,null
+4,CreateSolution,NS: Create a solution without average deployment time,Demo Description,,0,0,2000,20,200,OK,null
+5,CreateSolution,NS: Create a solution with invalid average Sales price,Demo Description,6,0,0,abcd,20,200,OK,null
+6,CreateSolution,NS: Create a solution without  average deployment time,Demo Description,6,0,0,,20,200,OK,null
+7,CreateSolution,NS: Create a solution with invalid average Sales Cycle,Demo Description,6,0,0,2000,abcd,200,OK,null
+8,CreateSolution,NS: Create a solution without average Sales Cycle,Demo Description,6,0,0,2000,,200,OK,null

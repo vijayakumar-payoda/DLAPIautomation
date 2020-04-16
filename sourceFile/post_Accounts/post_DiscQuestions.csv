@@ -1,0 +1,15 @@
+Sno,Api,Descriptions,QuestionName,QuestionDesc,Required,Tagtypeid,Questiontypeid,ResponseCode,ResponseText,ResponseMessage
+1,CreateDiscQuestionPS,Create a question with valid data,DiscQuestion,DemoDesc,1,1,1,200,0,OK
+2,CreateDiscQuestionPS,Create a question without enabling req checkbox,DiscQuestion,DemoDesc,0,2,2,200,0,OK
+3,CreateDiscQuestionNS,Create a question with question name alone,DiscQuestion,,,,,200,0,OK
+4,CreateDiscQuestionNS,Create a question with question description alone,,DemoDesc,,,,200,0,OK
+5,CreateDiscQuestionNS,Create a question with questiontype id alone,,,,,2,200,0,OK
+6,CreateDiscQuestionNS,Create a question with tagtype id alone,,,,2,,200,0,OK
+7,CreateDiscQuestionNS,Create a question with enabling req checkbox alone,,,1,,,200,0,OK
+8,CreateDiscQuestionNS,Create a question without question name,,DemoDesc,1,1,2,200,0,OK
+9,CreateDiscQuestionNS,Create a question without question desc,DiscQuestion,,1,3,3,200,0,OK
+10,CreateDiscQuestionNS,Create a question without questiontype id,DiscQuestion,DemoDesc,1,1,,200,0,OK
+11,CreateDiscQuestionNS,Create a question without tagtype id,DiscQuestion,DemoDesc,1,,1,200,0,OK
+12,CreateDiscQuestionNS,Create a question with invalid questiontype id,DiscQuestion,DemoDesc,1,1,abcd,200,0,OK
+13,CreateDiscQuestionNS,Create a question with invalid tagtype id,DiscQuestion,DemoDesc,1,abcd,1,200,0,OK
+14,CreateDiscQuestionNS,Create a question without required id,DiscQuestion,DemoDesc,,1,1,200,0,OK

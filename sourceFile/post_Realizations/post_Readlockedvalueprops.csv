@@ -1,0 +1,15 @@
+Sno,Api,Descriptions,limit,page,sortby,order,ResponseCode,ResponseMessage,ResponseText
+1,Readlockedvalueprops,PS: Read  locked value props using valid data,10,1,modified,desc,200,OK,companyname
+2,Readlockedvalueprops,PS: Read  locked value props by setting limit to 20,20,1,modified,desc,200,OK,companyname
+3,Readlockedvalueprops,PS: Read  locked value props by changing page to 2,10,2,modified,desc,200,OK,companyname
+4,Readlockedvalueprops,PS: Read  locked value props by changing sortby to 2,10,1,1,desc,200,OK,companyname
+5,Readlockedvalueprops,PS: Read  locked value props by changing order to asc,10,1,modified,asc,200,OK,companyname
+6,Readlockedvalueprops,NS: Read locked value props by using invalid limit,abcd,1,modified,desc,200,OK,[]
+7,Readlockedvalueprops,NS: Read locked value props without limit,,1,modified,desc,404,Not Found,The requested URL was not found on this server.<
+8,Readlockedvalueprops,NS: Read locked value props by using invalid page,10,abcd,modified,desc,200,OK,[]
+9,Readlockedvalueprops,NS: Read locked value props without page,10,,modified,desc,404,Not Found,The requested URL was not found on this server.<
+10,Readlockedvalueprops,NS: Read locked value props by using invalid sortby,10,1,abcd,desc,200,OK,[]
+11,Readlockedvalueprops,NS: Read locked value props without sortby,10,1,,desc,404,Not Found,The requested URL was not found on this server.<
+12,Readlockedvalueprops,NS: Read locked value props by using invalid order,10,1,modified,abcd,200,OK,[]
+13,Readlockedvalueprops,NS: Read locked value props without order,10,1,modified,,200,OK,companyname
+14,Readlockedvalueprops,NS: Read locked value props by using invalid data,abcd,abcd,abcd,abcd,200,OK,[]

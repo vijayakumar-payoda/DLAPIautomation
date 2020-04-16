@@ -1,0 +1,10 @@
+Sno,Api,Descriptions,valuePropNoteName,Customerfacing,valuePropNoteDesc,ResponseCode,ResponseText,ResponseMessage
+1,CreatenotePS,PS: Create note with valid data,TestNote,true,TestDescription,200,value_prop_id,OK
+2,CreatenotePS,PS: Create note : mark customer facing as false,TestNote,false,TestDescription,200,value_prop_id,OK
+3,CreatenoteNS,NS: Create note without name,,true,TestDescription,200,value_prop_id,OK
+4,CreatenoteNS,NS: Create note without description,TestNote,true,,200,value_prop_id,OK
+5,UpdatenotePS,PS: Modify note with valid data,ModifyNote,false,ModifyDescription,200,value_prop_id,OK
+6,UpdatenoteNS,NS: Modify note without name,,false,ModifyDescription,200,value_prop_id,OK
+7,UpdatenoteNS,NS: Modify note without description,ModifyNote,false,,200,value_prop_id,OK
+8,UpdatenoteNS,NS: Modify note without any data,,,,200,value_prop_id,OK
+9,UpdatenoteNS,NS: Modify note with invalid customer facing value,ModifyNote,sdiu89273589729,ModifyDescription,200,value_prop_id,OK

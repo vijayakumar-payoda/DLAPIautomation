@@ -1,0 +1,13 @@
+Sno,Api,Descriptions,Search,Page,Limit,Sortby,Order,ResponseCode,ResponseMessage,ResponseText
+1,ReadSolutions,PS: Read the solutions using valid data,all,1,5,modified,desc,200,OK,solution_category_id
+2,ReadSolutions,PS: Read the solutions using valid search name,Test,2,20,created,asc,200,OK,solution_category_id
+3,ReadSolutions,NS: Read the solutions using invalid search name,abcd,1,10,modified,desc,200,OK,page
+4,ReadSolutions,NS: Read the solutions using empty search name,,1,10,modified,desc,404,Not Found,The requested URL was not found on this server
+5,ReadSolutions,NS: Read the solutions using invalid page no,Test,abcd,10,modified,desc,200,OK,page
+6,ReadSolutions,NS: Read the solutions using empty page no,Test,,10,modified,desc,404,Not Found,The requested URL was not found on this server
+7,ReadSolutions,NS: Read the solutions using invalid limit,Test,1,abcd,modified,desc,200,OK,page
+8,ReadSolutions,NS: Read the solutions using empty limit,Test,1,,modified,desc,404,Not Found,The requested URL was not found on this server
+9,ReadSolutions,NS: Read the solutions using invalid sortby,Test,1,10,abcd,desc,200,OK,page
+10,ReadSolutions,NS: Read the solutions using empty sortby,Test,1,10,,desc,404,Not Found,The requested URL was not found on this server
+11,ReadSolutions,NS: Read the solutions using invalid order,Test,1,10,modified,abcd,200,OK,page
+12,ReadSolutions,NS: Read the solutions using empty order,Test,1,10,modified,,404,Not Found,The requested URL was not found on this server

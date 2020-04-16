@@ -1,0 +1,33 @@
+Sno,Api,Descriptions,searchTerm,publicOnly,synopsisOnly,limit,page,sortBy,order,ResponseCode,ResponseMessage,ResponseText
+1,SearchCompanyfromAdmin,PS: Search company with valid company name,Wal,0,1,10,1,name,asc,200,OK,user_id
+2,SearchCompanyfromAdmin,NS: Search company with invalid company name,Walter Inc,0,1,10,1,name,asc,200,OK,[]
+3,SearchCompanyfromAdmin,NS: Search company without companyname,,0,1,10,1,name,asc,200,OK,user_id
+4,SearchCompanyfromAdmin,NS: Search company with changing valid publicOnly value,Wal,1,1,10,1,name,asc,200,OK,user_id
+5,SearchCompanyfromAdmin,NS: Search company with changing invalid publicOnly value,Wal,abcd,1,10,1,name,asc,200,OK,user_id
+6,SearchCompanyfromAdmin,NS: Search company with changing valid synopsisOnly value,Walter Energy,0,0,10,1,name,asc,200,OK,user_id
+7,SearchCompanyfromAdmin,NS: Search company with changing invalid synopsisOnly value,Walter Energy,0,abcd,10,1,name,asc,200,OK,user_id
+8,SearchCompanyfromAdmin,PS: Search company with changing valid limit value,Wal,0,1,20,1,name,asc,200,OK,user_id
+9,SearchCompanyfromAdmin,NS: Search company with changing invalid limit value,Wal,0,1,abcd,1,name,asc,200,OK,[]
+10,SearchCompanyfromAdmin,PS: Search company with changing valid page value,Wal,0,1,10,2,name,asc,200,OK,user_id
+11,SearchCompanyfromAdmin,NS: Search company with changing invalid page value,Wal,0,1,10,abcd,name,asc,200,OK,[]
+12,SearchCompanyfromAdmin,PS: Search company with changing valid sortBy value,Wal,0,1,10,1,city,asc,200,OK,user_id
+13,SearchCompanyfromAdmin,NS: Search company with changing invalid sortBy value,Wal,0,1,10,1,abcd,asc,200,OK,user_id
+14,SearchCompanyfromAdmin,PS: Search company with changing valid order value,Wal,0,1,10,1,name,desc,200,OK,user_id
+15,SearchCompanyfromAdmin,NS: Search company with changing invalid order value,Wal,0,1,10,1,name,abcd,200,OK,user_id
+16,SearchCompanyfromAdmin,NS: Search company without any value,,,,,,,,200,OK,[]
+17,SearchCompanyfromUser,PS: Search company with valid company name,Wal,0,1,10,1,name,asc,200,OK,user_id
+18,SearchCompanyfromUser,NS: Search company with invalid company name,Walter Inc,0,1,10,1,name,asc,200,OK,[]
+19,SearchCompanyfromUser,NS: Search company without companyname,,0,1,10,1,name,asc,200,OK,user_id
+20,SearchCompanyfromUser,NS: Search company with changing valid publicOnly value,Wal,1,1,10,1,name,asc,200,OK,user_id
+21,SearchCompanyfromUser,NS: Search company with changing invalid publicOnly value,Wal,abcd,1,10,1,name,asc,200,OK,user_id
+22,SearchCompanyfromUser,NS: Search company with changing valid synopsisOnly value,Walter Energy,0,0,10,1,name,asc,200,OK,user_id
+23,SearchCompanyfromUser,NS: Search company with changing invalid synopsisOnly value,Walter Energy,0,abcd,10,1,name,asc,200,OK,user_id
+24,SearchCompanyfromUser,PS: Search company with changing valid limit value,Wal,0,1,20,1,name,asc,200,OK,user_id
+25,SearchCompanyfromUser,NS: Search company with changing invalid limit value,Wal,0,1,abcd,1,name,asc,200,OK,[]
+26,SearchCompanyfromUser,PS: Search company with changing valid page value,Wal,0,1,10,2,name,asc,200,OK,user_id
+27,SearchCompanyfromUser,NS: Search company with changing invalid page value,Wal,0,1,10,abcd,name,asc,200,OK,[]
+28,SearchCompanyfromUser,PS: Search company with changing valid sortBy value,Wal,0,1,10,1,city,asc,200,OK,user_id
+29,SearchCompanyfromUser,NS: Search company with changing invalid sortBy value,Wal,0,1,10,1,abcd,asc,200,OK,user_id
+30,SearchCompanyfromUser,PS: Search company with changing valid order value,Wal,0,1,10,1,name,desc,200,OK,user_id
+31,SearchCompanyfromUser,NS: Search company with changing invalid order value,Wal,0,1,10,1,name,abcd,200,OK,user_id
+32,SearchCompanyfromUser,NS: Search company without any value,,,,,,,,200,OK,[]

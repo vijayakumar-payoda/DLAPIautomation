@@ -1,0 +1,10 @@
+Sno,Api,Descriptions,showAll,summedBenefits,orderFlag,ResponseCode,ResponseText,ResponseMessage
+1,ReadPreparedVCS,PS: Read PreparedVCS using valid data,1,1,1,200,value_prop_metric_id,OK
+2,ReadPreparedVCS,NS: Read PreparedVCS using invalid showall value,abcd,1,1,200,value_prop_metric_id,OK
+3,ReadPreparedVCS,NS: Read PreparedVCS without showall value,,1,1,404,The requested URL was not found on this server.,Not Found
+4,ReadPreparedVCS,NS: Read PreparedVCS using invalid summedBenefits value,1,abcd,1,200,value_prop_metric_id,OK
+5,ReadPreparedVCS,NS: Read Prepared VCS without summedBenefits value,1,,1,404,The requested URL was not found on this server.,Not Found
+6,ReadPreparedVCS,NS: Read Prepared VCS using invalid orderFlag value,1,1,abcd,200,value_prop_metric_id,OK
+7,ReadPreparedVCS,NS: Read Prepared VCS without orderFlag value,1,1,,200,value_prop_metric_id,OK
+8,ReadPreparedVCS,NS: Read Prepared VCS using invalid data,abcd,abcd,abcd,200,value_prop_metric_id,OK
+9,ReadPreparedVCS,NS: Read Prepared VCS without data,,,,404,The requested URL was not found on this server.,Not Found

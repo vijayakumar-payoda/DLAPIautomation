@@ -1,0 +1,24 @@
+Sno,Api,Descriptions,benefit_type_id,unique_type_id,account_functional_objective_id,driver_baseline_answer,conservative,probable,aggressive,unit_type_id,financial_baseline_answer,Phase_0,Phase_1,Phase_2,ResponseCode,ResponseMessage,ResponseText
+1,AddBenefit,PS: Add benefit with valid data in payload,1,1,4,demo,0.1,0.2,0.1,14,150000,50,75,100,200,OK,account_solution_id
+2,AddBenefit,NS: Add benefit with invalid benefit_type_id in payload,abcd,1,4,demo,0.1,0.2,0.1,14,150000,50,75,100,200,OK,null
+3,AddBenefit,NS: Add benefit without benefit_type_id in payload,,1,4,demo,0.1,0.2,0.1,14,150000,50,75,100,200,OK,account_solution_id
+4,AddBenefit,NS: Add benefit with invalid unique_type_id in payload,1,abcd,4,demo,0.1,0.2,0.1,14,150000,50,75,100,406,Not Acceptable,Not Acceptable
+5,AddBenefit,NS: Add benefit without unique_type_id in payload,1,,4,demo,0.1,0.2,0.1,14,150000,50,75,100,406,Not Acceptable,Not Acceptable
+6,AddBenefit,NS: Add benefit with invalid account_functional_objective_id in payload,1,1,abcd,demo,0.1,0.2,0.1,14,150000,50,75,100,200,OK,account_solution_id
+7,AddBenefit,NS: Add benefit without account_functional_objective_id in payload,1,1,,demo,0.1,0.2,0.1,14,150000,50,75,100,200,OK,account_solution_id
+8,AddBenefit,NS: Add benefit without driver_baseline_answer in payload,1,1,4,,0.1,0.2,0.1,14,150000,50,75,100,200,OK,account_solution_id
+9,AddBenefit,NS: Add benefit with invalid conservative in payload,1,1,4,demo,abcd,0.2,0.1,14,150000,50,75,100,200,OK,account_solution_id
+10,AddBenefit,NS: Add benefit without conservative in payload,1,1,4,demo,,0.2,0.1,14,150000,50,75,100,200,OK,account_solution_id
+11,AddBenefit,NS: Add benefit with invalid probable in payload,1,1,4,demo,0.1,abcd,0.1,14,150000,50,75,100,200,OK,account_solution_id
+12,AddBenefit,NS: Add benefit without probable in payload,1,1,4,demo,0.1,,0.1,14,150000,50,75,100,200,OK,account_solution_id
+13,AddBenefit,NS: Add benefit with invalid aggressive in payload,1,1,4,demo,0.1,0.2,abcd,14,150000,50,75,100,200,OK,account_solution_id
+14,AddBenefit,NS: Add benefit without aggressive in payload,1,1,4,demo,0.1,0.2,,14,150000,50,75,100,200,OK,account_solution_id
+15,AddBenefit,NS: Add benefit with invalid unit_type_id in payload,1,1,4,demo,0.1,0.2,0.1,abcd,150000,50,75,100,406,Not Acceptable,Not Acceptable
+16,AddBenefit,NS: Add benefit without unit_type_id in payload,1,1,4,demo,0.1,0.2,0.1,,150000,50,75,100,406,Not Acceptable,Not Acceptable
+17,AddBenefit,NS: Add benefit without financial_baseline_answer in payload,1,1,4,demo,0.1,0.2,0.1,14,,50,75,100,200,OK,account_solution_id
+18,AddBenefit,NS: Add benefit with invalid Phase_0 in payload,1,1,4,demo,0.1,0.2,0.1,14,150000,abcd,75,100,406,Not Acceptable,Not Acceptable
+19,AddBenefit,NS: Add benefit without Phase_0 in payload,1,1,4,demo,0.1,0.2,0.1,14,150000,,75,100,406,Not Acceptable,Not Acceptable
+20,AddBenefit,NS: Add benefit with invalid Phase_1 in payload,1,1,4,demo,0.1,0.2,0.1,14,150000,50,abcd,100,406,Not Acceptable,Not Acceptable
+21,AddBenefit,NS: Add benefit without Phase_1 in payload,1,1,4,demo,0.1,0.2,0.1,14,150000,50,,100,406,Not Acceptable,Not Acceptable
+22,AddBenefit,NS: Add benefit with invalid Phase_2 in payload,1,1,4,demo,0.1,0.2,0.1,14,150000,50,75,abcd,406,Not Acceptable,Not Acceptable
+23,AddBenefit,NS: Add benefit without Phase_2 in payload,1,1,4,demo,0.1,0.2,0.1,14,150000,50,75,,406,Not Acceptable,Not Acceptable

@@ -1,0 +1,21 @@
+Sno,Api,Descriptions,question_type_id1,label1,question_type_id2,label2,ResponseCode,ResponseMessage,ResponseText
+1,Createsurvey,PS: Create survey using valid data,1,Question1,4,Question2,200,OK,The question has been created successfully
+2,Createsurvey,NS: Create survey using invalid question_type_id1,abcd,Question1,4,Question2,200,OK,The question has been created successfully
+3,Createsurvey,NS: Create survey without question_type_id1,,Question1,4,Question2,200,OK,The question has been created successfully
+4,Createsurvey,NS: Create survey without label1,1,,4,Question2,200,OK,The question has been created successfully
+5,Createsurvey,NS: Create survey using invalid question_type_id2,1,Question1,abcd,Question2,200,OK,The question has been created successfully
+6,Createsurvey,NS: Create survey without question_type_id1,1,Question1,,Question2,200,OK,The question has been created successfully
+7,Createsurvey,NS: Create survey without label2,1,Question1,4,,200,OK,The question has been created successfully
+8,Createsurvey,NS: Create survey without Question_type_ids,,Question1,,Question2,200,OK,The question has been created successfully
+9,Createsurvey,NS: Create survey without labels,1,,4,,200,OK,The question has been created successfully
+10,Createsurvey,NS: Create survey without any data,,,,,200,OK,The question has been created successfully
+11,Updatesurvey,PS: Update survey with valid data,1,Q1,1,Q2,200,OK,Template and questions has been Updated successfully
+12,Updatesurvey,NS: Update survey with invalid question_type_id1,abcd,Q1,1,Q2,200,OK,Template and questions has been Updated successfully
+13,Updatesurvey,NS: Update survey without question_type_id1,,Q1,1,Q2,200,OK,Template and questions has been Updated successfully
+14,Updatesurvey,NS: Update survey with invalid question_type_id2,1,Q1,abcd,Q2,200,OK,Template and questions has been Updated successfully
+15,Updatesurvey,NS: Update survey without question_type_id2,1,Q1,,Q2,200,OK,Template and questions has been Updated successfully
+16,Updatesurvey,NS: Update survey without label1,1,,1,Q2,200,OK,Template and questions has been Updated successfully
+17,Updatesurvey,NS: Update survey without label2,1,Q1,1,,200,OK,Template and questions has been Updated successfully
+18,Updatesurvey,NS: Update survey without question_type_ids,,Q1,,Q2,200,OK,Template and questions has been Updated successfully
+19,Updatesurvey,NS: Update survey with invalid question_type_ids,abcd,Q1,abcd,Q2,200,OK,Template and questions has been Updated successfully
+20,Updatesurvey,NS: Update survey without question_type_id and label,,,,,200,OK,Template and questions has been Updated successfully

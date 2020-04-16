@@ -1,0 +1,21 @@
+Sno,Api,Descriptions,Search,Page,Limit,Sortby,Order,ResponseCode,ResponseText,ResponseMessage
+1,ReadvaluePositions,PS: Search valuePositions by name,ABC,1,10,name,asc,200,company_id,OK
+2,ReadvaluePositions,PS:Search valuePositions by all,all,1,10,name,asc,200,company_id,OK
+3,ReadvaluePositions,PS:Search valuePositions  by Changing page,all,2,10,name,asc,200,company_id,OK
+4,ReadvaluePositions,PS:Search valuePositions  by Changing limit,all,1,20,name,asc,200,company_id,OK
+5,ReadvaluePositions,PS:Search valuePositions -  sortby created,all,1,10,created,asc,200,company_id,OK
+6,ReadvaluePositions,PS:Search valuePositions -  sortby status,all,1,10,status,desc,200,company_id,OK
+7,ReadvaluePositions,PS:Search valuePositions -  sortby totalcosts,all,1,10,totalcosts,desc,200,company_id,OK
+8,ReadvaluePositions,PS:Search valuePositions -  sortby totalbenefits,all,1,10,totalbenefits,desc,200,company_id,OK
+9,ReadvaluePositions,PS:Search valuePositions -  sortby company_name,all,1,10,company_name,desc,200,company_id,OK
+10,ReadvaluePositions,PS:Search valuePositions -  sortby name,all,1,10,name,desc,200,company_id,OK
+11,ReadvaluePositions,NS: Search valuePositions  by invalid search data,abcd,1,10,name,desc,200,[],OK
+12,ReadvaluePositions,NS: Search valuePositions  by invalid page,all,abcd,10,name,desc,200,[],OK
+13,ReadvaluePositions,NS: Search valuePositions  by invalid limit,all,1,abcd,name,desc,200,[],OK
+14,ReadvaluePositions,NS: Search valuePositions by invalid sortby,all,1,10,abcd,desc,200,[],OK
+15,ReadvaluePositions,NS: Search valuePositions  by invalid order,all,1,10,name,abcd,200,[],OK
+16,ReadvaluePositions,NS: Search valuePositions  by without search,,1,30,name,desc,200,company_id,OK
+17,ReadvaluePositions,NS: Search valuePositions  by without page,all,,10,name,desc,200,company_id,OK
+18,ReadvaluePositions,NS: Search valuePositions  by without limit,all,1,,name,desc,200,[],OK
+19,ReadvaluePositions,NS: Search valuePositions  by without sortby,all,1,10,,desc,200,[],OK
+20,ReadvaluePositions,NS: Search valuePositions  by without order,all,3,10,name,,200,company_id,OK

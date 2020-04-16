@@ -1,0 +1,11 @@
+Sno,Api,Descriptions,scale_type_id1,value1,scale_type_id2,value2,ResponseCode,ResponseMessage,ResponseText
+1,CreateSolutionscaler,PS: Create a solution scaler with valid data,1,1000,2,4500,200,OK,straight_scaling
+2,CreateSolutionscaler,NS: Create a solution scaler with invalid scaletype_id1,abd,1000,2,4500,406,Not Acceptable,Not Acceptable
+3,CreateSolutionscaler,NS: Create a solution scaler without scaletype_id1,,1000,2,4500,406,Not Acceptable,Not Acceptable
+4,CreateSolutionscaler,NS: Create a solution scaler with invalid scaletype_id2,1,1000,abcd,4500,406,Not Acceptable,Not Acceptable
+5,CreateSolutionscaler,NS: Create a solution scaler without scaletype_id2,1,1000,,4500,406,Not Acceptable,Not Acceptable
+6,CreateSolutionscaler,NS: Create a solution scaler with invalid value1,1,abcd,2,4500,200,OK,straight_scaling
+7,CreateSolutionscaler,NS: Create a solution scaler without value1,1,,2,4500,200,OK,straight_scaling
+8,CreateSolutionscaler,NS: Create a solution scaler with invalid value2,1,1000,2,abcd,200,OK,straight_scaling
+9,CreateSolutionscaler,NS: Create a solution scaler without value2,1,1000,2,,200,OK,straight_scaling
+10,CreateSolutionscaler,NS: Create a solution scaler without any data,,,,,406,Not Acceptable,Not Acceptable

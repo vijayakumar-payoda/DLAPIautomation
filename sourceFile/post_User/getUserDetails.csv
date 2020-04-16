@@ -1,0 +1,25 @@
+Sno,Api,Descriptions,userid,ResponseCode,ResponseMessage,ResponseText,Issue,Issue No
+1,GetDLUserDetailsWithAdminLogin,With valid user id in the request URL,52277,200,OK,testuser2054@guerrillamail.com,,
+2,GetDLUserDetailsWithAdminLogin,With a deleted user id in the request URL,52270,404,Not Found,200,Yes,11
+3,GetDLUserDetailsWithAdminLogin,With empty user id in the request URL,,404,Not Found,200,Yes,11
+4,GetDLUserDetailsWithAdminLogin,With invalid user id in the request URL,abcd,404,Not Found,200,Yes,11
+5,GetDLUserDetailsWithUserLogin,With valid user id in the request URL,52277,200,OK,testuser2054@guerrillamail.com,,
+6,GetDLUserDetailsWithUserLogin,With a deleted user id in the request URL,52270,404,Not Found,200,,
+7,GetDLUserDetailsWithUserLogin,With empty user id in the request URL,,404,Not Found,200,,
+8,GetDLUserDetailsWithUserLogin,With invalid user id in the request URL,abcd,404,Not Found,200,,
+9,GetDLUserAcceptedTermswithAdminLogin,With valid user id in the request URL,52277,200,OK,accepted,,
+10,GetDLUserAcceptedTermswithAdminLogin,With a deleted user id in the request URL,52270,200,OK,accepted,,
+11,GetDLUserAcceptedTermswithAdminLogin,With empty user id in the request URL,,200,OK,result,,
+12,GetDLUserAcceptedTermswithAdminLogin,With invalid user id in the request URL,abcd,200,OK,accepted,,
+13,GetDLUserAcceptedTermswithUserLogin,With valid user id in the request URL,52277,200,OK,accepted,,
+14,GetDLUserAcceptedTermswithUserLogin,With a deleted user id in the request URL,52270,200,OK,accepted,,
+15,GetDLUserAcceptedTermswithUserLogin,With empty user id in the request URL,,200,OK,result,,
+16,GetDLUserAcceptedTermswithUserLogin,With invalid user id in the request URL,abcd,200,OK,accepted,,
+17,ChangestemppwdstatuswithAdminLogin,With valid user id in the request URL,52277,200,OK,changed,,
+18,ChangestemppwdstatuswithAdminLogin,With a deleted user id in the request URL,52270,200,OK,changed,,
+19,ChangestemppwdstatuswithAdminLogin,With empty user id in the request URL,,200,OK,result,,
+20,ChangestemppwdstatuswithAdminLogin,With invalid user id in the request URL,abcd,200,OK,changed,,
+21,ChangestemppwdstatuswithUserLogin,With valid user id in the request URL,52277,200,OK,changed,,
+22,ChangestemppwdstatuswithUserLogin,With a deleted user id in the request URL,52270,200,OK,changed,,
+23,ChangestemppwdstatuswithUserLogin,With empty user id in the request URL,,200,OK,result,,
+24,ChangestemppwdstatuswithUserLogin,With invalid user id in the request URL,abcd,200,OK,changed,,

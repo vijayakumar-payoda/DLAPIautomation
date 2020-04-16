@@ -1,0 +1,39 @@
+Sno,Api,Descriptions,scratchpad_factor_type_id,operator_id1,operator_id2,operator_id3,operand1,operand2,operand3,open_paren,close_paren,ResponseCode,ResponseText,ResponseMessage
+1,Readscratchpadtotal,PS:Read Scratchpad total with valid data,1,3,3,5,100,20,30,0,0,200,total,OK
+2,Readscratchpadtotal,NS:Read Scratchpad total with invalid scratchpad_factor_type_id,abcd,3,3,5,100,20,30,0,0,200,Improper params,OK
+3,Readscratchpadtotal,NS:Read Scratchpad total without  scratchpad_factor_type_id,,3,3,5,100,20,30,0,0,200,Improper params,OK
+4,Readscratchpadtotal,NS:Read Scratchpad total invalid Operator_id1,1,abcd,3,5,100,20,30,0,0,500,,Internal Server Error
+5,Readscratchpadtotal,NS:Read Scratchpad total without  Operator_id1,1,,3,5,100,20,30,0,0,500,,Internal Server Error
+6,Readscratchpadtotal,NS:Read Scratchpad total with invalid  Operator_id2,1,3,abcd,5,100,20,30,0,0,500,,Internal Server Error
+7,Readscratchpadtotal,NS:Read Scratchpad total without  Operator_id2,1,3,,5,100,20,30,0,0,500,,Internal Server Error
+8,Readscratchpadtotal,NS:Read Scratchpad total with invalid  Operator_id3,1,3,3,abcd,100,20,30,0,0,200,Improper params,OK
+9,Readscratchpadtotal,NS:Read Scratchpad total without  Operator_id3,1,3,3,,100,20,30,0,0,200,Improper params,OK
+10,Readscratchpadtotal,NS:Read Scratchpad total with invalid  Operand1,1,3,3,5,abcd,20,30,0,0,200,total,OK
+11,Readscratchpadtotal,NS:Read Scratchpad total without  Operand1,1,3,3,5,,20,30,0,0,200,total,OK
+12,Readscratchpadtotal,NS:Read Scratchpad total with invalid  Operand2,1,3,3,5,100,abcd,30,0,0,200,total,OK
+13,Readscratchpadtotal,NS:Read Scratchpad total without  Operand2,1,3,3,5,100,,30,0,0,200,total,OK
+14,Readscratchpadtotal,NS:Read Scratchpad total with invalid  Operand3,1,3,3,5,100,20,abcd,0,0,200,total,OK
+15,Readscratchpadtotal,NS:Read Scratchpad total without  Operand3,1,3,3,5,100,20,,0,0,200,total,OK
+16,Readscratchpadtotal,NS:Read Scratchpad total with invalid open_parentheses,1,3,3,5,100,20,30,abcd,0,200,total,OK
+17,Readscratchpadtotal,NS:Read Scratchpad total without open_parentheses,1,3,3,5,100,20,30,,0,200,total,OK
+18,Readscratchpadtotal,NS:Read Scratchpad total with invalid close_parentheses,1,3,3,5,100,20,30,0,abcd,200,total,OK
+19,Readscratchpadtotal,NS:Read Scratchpad total without close_parentheses,1,3,3,5,100,20,30,0,,200,total,OK
+20,Updatescratchpad,PS:Updates scratchpad with valid data,1,3,3,5,50,50,20,0,0,200,total,OK
+21,Updatescratchpad,NS:Updates scratchpad with invalid scratchpad_factor_type_id,abcd,3,3,5,50,50,20,0,0,406,Not Acceptable,Not Acceptable
+22,Updatescratchpad,NS:Updates scratchpad without  scratchpad_factor_type_id,,3,3,5,50,50,20,0,0,406,Not Acceptable,Not Acceptable
+23,Updatescratchpad,NS:Updates scratchpad invalid Operator_id1,1,abcd,3,5,50,50,20,0,0,200,scratchpad_ids,OK
+24,Updatescratchpad,NS:Updates scratchpad without  Operator_id1,1,,3,5,50,50,20,0,0,200,scratchpad_ids,OK
+25,Updatescratchpad,NS:Updates scratchpad with invalid  Operator_id2,1,3,abcd,5,50,50,20,0,0,200,scratchpad_ids,OK
+26,Updatescratchpad,NS:Updates scratchpad without  Operator_id2,1,3,,5,50,50,20,0,0,200,scratchpad_ids,OK
+27,Updatescratchpad,NS:Updates scratchpad with invalid  Operator_id3,1,3,3,abcd,50,50,20,0,0,200,scratchpad_ids,OK
+28,Updatescratchpad,NS:Updates scratchpad without  Operator_id3,1,3,3,,50,50,20,0,0,200,scratchpad_ids,OK
+29,Updatescratchpad,NS:Updates scratchpad with invalid  Operand1,1,3,3,5,abcd,50,20,0,0,200,total,OK
+30,Updatescratchpad,NS:Updates scratchpad without  Operand1,1,3,3,5,,50,20,0,0,200,total,OK
+31,Updatescratchpad,NS:Updates scratchpad with invalid  Operand2,1,3,3,5,50,abcd,20,0,0,200,total,OK
+32,Updatescratchpad,NS:Updates scratchpad without  Operand2,1,3,3,5,50,,20,0,0,200,total,OK
+33,Updatescratchpad,NS:Updates scratchpad with invalid  Operand3,1,3,3,5,50,50,abcd,0,0,200,total,OK
+34,Updatescratchpad,NS:Updates scratchpad without  Operand3,1,3,3,5,50,50,,0,0,200,total,OK
+35,Updatescratchpad,NS:Updates scratchpad with invalid open_parentheses,1,3,3,5,50,50,20,abcd,0,200,total,OK
+36,Updatescratchpad,NS:Updates scratchpad without open_parentheses,1,3,3,5,50,50,20,,0,200,total,OK
+37,Updatescratchpad,NS:Updates scratchpad with invalid close_parentheses,1,3,3,5,50,50,20,0,abcd,200,total,OK
+38,Updatescratchpad,NS:Updates scratchpad without close_parentheses,1,3,3,5,50,50,20,0,,200,total,OK

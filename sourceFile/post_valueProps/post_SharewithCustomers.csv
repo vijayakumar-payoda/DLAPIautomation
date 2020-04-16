@@ -1,0 +1,8 @@
+Sno,Api,Descriptions,Firstname,Lastname,Title,Email,account_name,ResponseCode,ResponseText,ResponseMessage
+1,SharewithcustomerPS,Add customer with valid data,TestFirst,TestLast,QA,testuseremail,Payoda,200,true,OK
+2,SharewithcustomerNS,Add customer without firstname,,TestLast,QA,testuseremail@yopmail.com,Payoda,200,true,OK
+3,SharewithcustomerNS,Add customer without lastname,TestFirst,,QA,testuseremail@yopmail.com,Payoda,200,true,OK
+4,SharewithcustomerNS,Add customer without title,TestFirst,TestLast,,testuseremail@yopmail.com,Payoda,200,true,OK
+5,SharewithcustomerNS,Add customer without email,TestFirst,TestLast,QA,,Payoda,200,true,OK
+6,SharewithcustomerNS,Add customer without accountname,TestFirst,TestLast,QA,testuseremail@yopmail.com,,200,true,OK
+7,SharewithcustomerNS,Add customer without data,,,,,,200,true,OK

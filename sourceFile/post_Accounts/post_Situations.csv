@@ -1,0 +1,5 @@
+Sno,Api,Descriptions,Name,Description,Elementtypeid,ResponseCode,ResponseText,ResponseMessage
+1,CreateSituationType,PS: Create situation type with valid inputs,TestSituationType,Test Description,1,200,result,OK
+2,CreateSituationType,PS: Create situation type with name and id only,TestSituationType,,2,200,result,OK
+3,CreateSituationTypeElement,PS: Create situation type element with valid inputs,SituationTypeElement,Test Description,,200,result,OK
+4,CreateSituationTypeElement,PS: Create situation type element with valid inputs,SituationTypeElement,,,200,result,OK

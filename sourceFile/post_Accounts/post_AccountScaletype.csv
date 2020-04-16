@@ -1,0 +1,2 @@
+Sno,Api,Descriptions,Scaler_name,Scaler_description,ResponseCode,ResponseText,ResponseMessage
+1,Createscaletype,PS: Create account scaletype using valid data,Test_scaler,Test_scalerdesc,200,Account scale type has been created successfully,OK

@@ -1,0 +1,32 @@
+Sno,Api,Descriptions,Accrualtype_id,Cost,Costtype_id,Quantity,Discount,Cost_Categorytype_id,ResponseCode,ResponseText,ResponseMessage
+1,AddCost,NS: Add Cost without accrualtype id,,1000,25114,10,2,0,200,null,OK
+2,AddCost,NS: Add Cost without cost,2,,25114,10,2,0,200,null,OK
+3,AddCost,NS: Add Cost without costtype id,2,1000,,10,2,0,200,null,OK
+4,AddCost,NS: Add Cost without quantity,2,1000,25115,,2,0,200,null,OK
+5,AddCost,NS: Add Cost without discount,2,1000,25153,10,,0,200,null,OK
+6,AddCost,NS: Add Cost with incorrect accrualtype,abcd,1000,25115,10,2,0,200,null,OK
+7,AddCost,NS: Add Cost with incorrect cost,2,abcd,25153,10,2,0,200,null,OK
+8,AddCost,NS: Add Cost with incorrect costtype id,2,1000,abcd,10,2,0,200,null,OK
+9,AddCost,NS: Add Cost with incorrect quantity,2,1000,25115,abcd,2,0,200,null,OK
+10,AddCost,NS: Add Cost with incorrect discount,2,1000,25115,10,abcd,0,200,null,OK
+11,AddCost,NS: Add Cost without data,,,,,,,200,null,OK
+12,AddCost,NS: Add Cost with incorrect accrualtype,89,1000,25115,10,2,0,200,null,OK
+13,AddCost,NS: Add Cost with incorrect costtype id,2,1000,2500,10,2,0,200,null,OK
+14,AddCostP,PS: Add Cost with valid data License - One time,1,1000,25114,10,2,0,200,value_prop_id,OK
+15,AddCostP,PS: Add Cost with valid data Customer Cost - Annual,2,2000,25115,10,2,0,200,value_prop_id,OK
+16,AddCostP,PS: Add Cost with valid data Professional services - Variable,3,3000,25153,10,2,0,200,value_prop_id,OK
+17,AddCostP,PS: Add Cost with valid data CS Subscription - Annual,1,4000,25111,10,2,0,200,value_prop_id,OK
+18,EditCost,NS: Edit Cost without accrualtype id,,3000,25153,11,10,1,200,value_prop_id,OK
+19,EditCost,NS: Edit Cost without cost value,2,,25114,5,3,0,200,value_prop_id,OK
+20,EditCost,NS: Edit Cost without costtype id,2,500,,20,20,1,200,value_prop_id,OK
+21,EditCost,NS: Edit Cost without quantity,3,6000,25114,,17,0,200,value_prop_id,OK
+22,EditCost,NS: Edit Cost without discount,2,700,25153,2,,1,200,value_prop_id,OK
+23,EditCost,NS: Edit Cost with incorrect accrualtype,abcd,800,25115,3,2,0,200,value_prop_id,OK
+24,EditCost,NS: Edit Cost with incorrect cost,3,abcd,25153,4,1,1,200,value_prop_id,OK
+25,EditCost,NS: Edit Cost with incorrect costtype id,1,900,abcd,5,4,0,200,value_prop_id,OK
+26,EditCost,NS: Edit Cost with incorrect quantity,3,2900,25115,abcd,5,1,200,value_prop_id,OK
+27,EditCost,NS: Edit Cost with incorrect discount,2,3000,25153,6,abcd,0,200,value_prop_id,OK
+28,EditCost,NS: Edit Cost without data,,,,,,,200,value_prop_id,OK
+29,EditCost,NS: Edit Cost with accrualtype value that does not exist,89,4500,25153,10,2,1,200,value_prop_id,OK
+30,EditCost,NS: Edit Cost with costtype id that does not exist,3,5500,2500,11,7,0,200,null,OK
+31,EditCost,PS: Edit Cost with valid data,1,6700,25114,12,5,1,200,value_prop_id,OK

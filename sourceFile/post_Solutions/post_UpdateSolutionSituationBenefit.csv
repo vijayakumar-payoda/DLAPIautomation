@@ -1,0 +1,12 @@
+Sno,Api,Descriptions,Driver_baseline_answer,Financial_baseline_answer,Conservative,Probable,Aggressive,ResponseCode,ResponseMessage,ResponseText
+1,Solutionsituationbenefit,PS: Update solution situation benefit with valid data in payload,0.01,0.01,0.02,0.02,0.03,200,OK,account_solution_situation_id
+2,Solutionsituationbenefit,NS: Update solution situation benefit with invalid Driver_baseline_answer,abcd,0.01,0.02,0.02,0.03,406,Not Acceptable,Not Acceptable
+3,Solutionsituationbenefit,NS: Update solution situation benefit without  Driver_baseline_answer,,0.01,0.02,0.02,0.03,406,Not Acceptable,Not Acceptable
+4,Solutionsituationbenefit,NS: Update solution situation benefit with invalid Financial_baseline_answer,0.01,abcd,0.02,0.02,0.03,406,Not Acceptable,Not Acceptable
+5,Solutionsituationbenefit,NS: Update solution situation benefit without  Financial_baseline_answer,0.01,,0.02,0.02,0.03,406,Not Acceptable,Not Acceptable
+6,Solutionsituationbenefit,NS: Update solution situation benefit with invalid Conservative,0.01,0.01,abcd,0.02,0.03,406,Not Acceptable,Not Acceptable
+7,Solutionsituationbenefit,NS: Update solution situation benefit without  Conservative,0.01,0.01,,0.02,0.03,406,Not Acceptable,Not Acceptable
+8,Solutionsituationbenefit,NS: Update solution situation benefit with invalid Probable,0.01,0.01,0.02,abcd,0.03,406,Not Acceptable,Not Acceptable
+9,Solutionsituationbenefit,NS: Update solution situation benefit without  Probable,0.01,0.01,0.02,,0.03,406,Not Acceptable,Not Acceptable
+10,Solutionsituationbenefit,NS: Update solution situation benefit with invalid Aggressive,0.01,0.01,0.02,0.02,abcd,406,Not Acceptable,Not Acceptable
+11,Solutionsituationbenefit,NS: Update solution situation benefit without  Aggressive,0.01,0.01,0.02,0.02,,406,Not Acceptable,Not Acceptable

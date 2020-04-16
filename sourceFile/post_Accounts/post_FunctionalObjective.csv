@@ -1,0 +1,3 @@
+Sno,Api,Descriptions,Objective_name,Objective_description,ResponseCode,ResponseText,ResponseMessage
+1,Createfunctionalobjective,PS: Create functional objective using valid data,TestFunctionalObjective,Test ObjectiveDesc,200,result,OK
+2,Modifyfunctionalobjective,PS: Modify functional objective using valid data,Modifyfunctionalobjective,Modify objective desc,200,Updated sucessfully,OK

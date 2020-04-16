@@ -1,0 +1,13 @@
+Sno,Api,Descriptions,apply_all,driver_phase_2,driver_phase_3,ResponseCode,ResponseText,ResponseMessage
+1,Updatedriverphasing,PS: Update driverphasing with valid data,1,50,30,200,driver_phase_1,OK
+2,Updatedriverphasing,PS: Update driverphasing by set apply_all value to 0,0,,,200,driver_phase_1,OK
+3,Updatedriverphasing,PS: Update driverphasing by changing driver_phase_2 value,0,80,,200,driver_phase_1,OK
+4,Updatedriverphasing,PS: Update driverphasing by changing driver_phase_3 value,0,,50,200,driver_phase_1,OK
+5,Updatedriverphasing,PS: Update driverphasing by changing driver_phase_2  and driver_phase_3 value,0,60,40,200,driver_phase_1,OK
+6,Updatedriverphasing,NS: Update driverphasing with invalid driver_phase_2 value,0,abcd,,200,driver_phase_1,OK
+7,Updatedriverphasing,NS: Update driverphasing with invalid driver_phase_3 value,0,,abcd,200,driver_phase_1,OK
+8,Updatedriverphasing,NS: Update driverphasing with invalid driver_phase_2 and 3 value,0,abcd,abcd,200,driver_phase_1,OK
+9,Updatedriverphasing,NS: Update driverphasing without driver_phase_2 value,0,,40,200,driver_phase_1,OK
+10,Updatedriverphasing,NS: Update driverphasing without driver_phase_3 value,0,70,,200,driver_phase_1,OK
+11,Updatedriverphasing,NS: Update driverphasing without driver_phase_2 and 3 value,0,,,200,driver_phase_1,OK
+12,Updatedriverphasing,NS: Update driverphasing by set apply_all value to invalid,abcd,70,40,200,driver_phase_1,OK

@@ -1,0 +1,10 @@
+Sno,Api,Descriptions,yr1_percent ,yr2_percent ,yr3_percent,ResponseCode,ResponseText,ResponseMessage
+1,Createdeploymentschedule,PS: Create deployment schedule with only yr1_percent,50,,,200,value_prop_id,OK
+2,Createdeploymentschedule,PS: Create deployment schedule with only yr2_percent,,90,,200,value_prop_id,OK
+3,Createdeploymentschedule,PS: Create deployment schedule with only yr3_percent,,,40,200,value_prop_id,OK
+4,Createdeploymentschedule,NS: Create deployment schedule with invalid yr1_percent,abcd,89,78,200,value_prop_id,OK
+5,Createdeploymentschedule,NS: Create deployment schedule with invalid yr2_percent,27,abcd,75,200,value_prop_id,OK
+6,Createdeploymentschedule,NS: Create deployment schedule with invalid yr3_percent,100,85,abcd,200,value_prop_id,OK
+7,Createdeploymentschedule,NS: Create deployment schedule without yr_percents,,,,200,value_prop_id,OK
+8,Createdeploymentschedule,NS: Create deployment schedule with invalid yr_percents,abcd,abcd,abcd,200,value_prop_id,OK
+9,Createdeploymentschedule,PS: Create deployment schedule with valid data,100,100,100,200,value_prop_id,OK

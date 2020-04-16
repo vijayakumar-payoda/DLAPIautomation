@@ -1,0 +1,5 @@
+Sno,Api,Descriptions,metricNote,alt_metric_name,ResponseCode,ResponseText,ResponseMessage
+1,UpdateMetricnote,NS: Update metric note without note desc,,,200,account_solution_metric_id,OK
+2,UpdateMetricnote,PS: Update metric note with valid data,TestNote,,200,account_solution_metric_id,OK
+3,UpdateMetricname,PS: Update metric name with valid data,,TestMetric,200,account_solution_metric_id,OK
+4,UpdateMetricname,NS: Update metric name without data,,,200,account_solution_metric_id,OK

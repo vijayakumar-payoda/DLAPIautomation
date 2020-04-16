@@ -1,0 +1,23 @@
+Sno,Api,Descriptions,firstname,account_info_view,account_info_editable,benefits_view,benefits_editable,assumptions_view,assumptions_editable,costs_view,result_view,re_share,is_external,ResponseCode,ResponseText,ResponseMessage
+1,CreateExternalshare,Create external share using valid data,Externaluser,1,1,1,1,1,1,1,1,0,1,200,true,OK
+2,CreateExternalshare,Create external share without firstname,,1,1,1,1,1,1,1,1,0,1,200,,OK
+3,CreateExternalshare,Create external share using invalid accountinfoview,Externaluser,abcd,1,1,1,1,1,1,1,0,1,200,,OK
+4,CreateExternalshare,Create external share without  accountinfoview,Externaluser,,1,1,1,1,1,1,1,0,1,200,,OK
+5,CreateExternalshare,Create external share using invalid accountinfoeditable,Externaluser,1,abcd,1,1,1,1,1,1,0,1,200,,OK
+6,CreateExternalshare,Create external share without accountinfoeditable,Externaluser,1,,1,1,1,1,1,1,0,1,200,,OK
+7,CreateExternalshare,Create external share using invalid benefitsview,Externaluser,1,1,abcd,1,1,1,1,1,0,1,200,,OK
+8,CreateExternalshare,Create external share without benefitsview,Externaluser,1,1,,1,1,1,1,1,0,1,200,,OK
+9,CreateExternalshare,Create external share using invalid benefitseditable,Externaluser,1,1,1,abcd,1,1,1,1,0,1,200,,OK
+10,CreateExternalshare,Create external share without benefitseditable,Externaluser,1,1,1,,1,1,1,1,0,1,200,,OK
+11,CreateExternalshare,Create external share using invalid assumptionsview,Externaluser,1,1,1,1,abcd,1,1,1,0,1,200,,OK
+12,CreateExternalshare,Create external share without assumptionsview,Externaluser,1,1,1,1,,1,1,1,0,1,200,,OK
+13,CreateExternalshare,Create external share using invalid assumptionseditable,Externaluser,1,1,1,1,1,abcd,1,1,0,1,200,,OK
+14,CreateExternalshare,Create external share without assumptionseditable,Externaluser,1,1,1,1,1,,1,1,0,1,200,,OK
+15,CreateExternalshare,Create external share using invalid costsview,Externaluser,1,1,1,1,1,1,abcd,1,0,1,200,,OK
+16,CreateExternalshare,Create external share without costsview,Externaluser,1,1,1,1,1,1,,1,0,1,200,,OK
+17,CreateExternalshare,Create external share using invalid resultview,Externaluser,1,1,1,1,1,1,1,abcd,0,1,200,,OK
+18,CreateExternalshare,Create external share without resultview,Externaluser,1,1,1,1,1,1,1,,0,1,200,,OK
+19,CreateExternalshare,Create external share using invalid reshare,Externaluser,1,1,1,1,1,1,1,1,abcd,1,200,,OK
+20,CreateExternalshare,Create external share without reshare,Externaluser,1,1,1,1,1,1,1,1,,1,200,,OK
+21,CreateExternalshare,Create external share using invalid isExternal,Externaluser,1,1,1,1,1,1,1,1,0,abcd,200,Value Proposition Already Shared. Please Try Updating,OK
+22,CreateExternalshare,Create external share without isExternal,Externaluser,1,1,1,1,1,1,1,1,0,,200,Value Proposition Already Shared. Please Try Updating,OK

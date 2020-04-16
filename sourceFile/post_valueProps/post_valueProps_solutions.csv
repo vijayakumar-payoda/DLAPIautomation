@@ -1,0 +1,8 @@
+Sno,Api,Descriptions,account_solution_id1,account_solution_id2,account_solution_id3,account_solution_id4,quantity,delete_vp_solutions,ResponseCode,ResponseText,ResponseMessage
+1,CreateSolution,Creates value prop solution without account solution id,,,,,1,1,,,
+2,CreateSolution,Creates value prop solution without quantity,301,302,680,1074,,1,,,
+3,CreateSolution,Creates value prop solution without delete_vp_solutions,301,302,680,1074,1,,,,
+4,CreateSolution,Creates value prop solution with invalid account_solution_id,abcd,abcd,abcd,abcd,1,1,,,
+5,CreateSolution,Creates value prop solution with invalid quantity,301,302,680,1074,abcd,1,,,
+6,CreateSolution,Creates value prop solution with invalid delete_vp_solutions,301,302,680,1074,1,abcd,,,
+7,CreateSolution,Creates value prop solution using valid data,301,302,680,1074,1,1,,,

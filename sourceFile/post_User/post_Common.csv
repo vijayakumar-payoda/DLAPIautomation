@@ -1,0 +1,10 @@
+Sno,Api,Descriptions,AssertResponseCode,FirstName,LastName,EmailAddress,Roletypeid,ManagerEmail,UserName,FirstLogin,TempPassword,AcceptedTerms,UserTypeId,PrivilegeId,CurrentPassword,NewPassword,ConfirmPassword
+1,updateprofile,Updates profile with valid details,200,Update,User,updateuser,2,updateuser,UpdateUser,1,1,0,1,2,,,
+2,resetpassword,Reset a user's password without new and confirm password,406,,,,,,,,,,,,demo,,
+3,resetpassword,Reset a user's password without current and confirm password,406,,,,,,,,,,,,,demo,
+4,resetpassword,Reset a user's password without current and new password,406,,,,,,,,,,,,,,demo
+5,resetpassword,Reset a user's password with invalid current password,406,,,,,,,,,,,,demo123,demo,demo
+6,resetpassword,Reset a user's password with invalid new password,406,,,,,,,,,,,,demo,demo123,demo
+7,resetpassword,Reset a user's password with invalid confirm and new password,406,,,,,,,,,,,,demo,demo123,demo321
+8,resetpassword,Reset a user's password with invalid passwords,406,,,,,,,,,,,,demo234,demo345,demo890
+9,resetpassword,Reset a user's password with valid passwords,200,,,,,,,,,,,,demo,demo,demo

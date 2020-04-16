@@ -1,0 +1,7 @@
+Sno,Api,Description,CompetitorName,CompetitorDescription,limit,page,search,sortby,order,PartnerID,CostCategoryType,Scalername,ScalerDescription,ScalerCompanyfield,AssertResponseCode
+1,CreateCompetitor,Create Competitor with name and description,TestCompetitor,Test Competitor creation,10,1,all,created,desc,,2,,,,200
+2,CreateCompetitor,Create Competitor with name alone,TestCompetitor,,,,,,,,,,,,401
+3,CreateCompetitor,Create Competitor with description alone,,Test Competitor creation,,,,,,,,,,,401
+4,CreateCompetitor,Create Competitor without name and description,,,,,,,,,,,,,401
+6,CreatePartnertype,Create partner type,,,,,,,,,,,,,200
+7,CreateMasterScaler,Create Scaler Details,,,,,,,,,,TestScaler,TestScalerDescription,TestCompany,200

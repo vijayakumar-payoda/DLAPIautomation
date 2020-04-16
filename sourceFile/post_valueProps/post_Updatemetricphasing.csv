@@ -1,0 +1,18 @@
+Sno,Api,Descriptions,apply_all,metric_phase_0,metric_phase_1,metric_phase_2,metric_phase_3 ,ResponseCode,ResponseText,ResponseMessage
+1,Updatemetricphasing,PS: Update metricpahsing by set apply_all value to 0,0,50,30,70,80,200,metric_phasing,OK
+2,Updatemetricphasing,PS: Update metricphasing by set apply_all value to 1,1,40,20,60,90,200,Value Prop Metric Phasing updated successfully,OK
+3,Updatemetricphasing,PS: Update metricphasing by set apply_all value to 2,2,80,10,30,50,200,Value Prop Metric Phasing updated successfully,OK
+4,Updatemetricphasing,PS: Update metricphasing by set apply_all value to 3,3,100,50,70,20,200,Value Prop Metric Phasing updated successfully,OK
+5,Updatemetricphasing,PS: Update metricphasing by set metric_phase vaues to decimal,0,10.5,25.89,48.2,50.3,200,metric_phasing,OK
+6,Updatemetricphasing,NS: Update metricphasing by set apply_all value to invalid,abcd,60,40,20,10,406,Not Acceptable,Not Acceptable
+7,Updatemetricphasing,NS: Update metricphasing with no apply_all value,,30,23,89,100,406,Not Acceptable,Not Acceptable
+8,Updatemetricphasing,NS: Update metricphasing by set metric_phase_0 value to invalid,0,abcd,25,50,75,200,metric_phasing,OK
+9,Updatemetricphasing,NS: Update metricphasing by set metric_phase_0 value to empty,0,,40,32,89,200,metric_phasing,OK
+10,Updatemetricphasing,NS: Update metricphasing by set metric_phase_1 value to invalid,0,70,abcd,40,80,200,metric_phasing,OK
+11,Updatemetricphasing,NS: Update metricphasing by set metric_phase_1 value to empty,0,70,,40,89,200,metric_phasing,OK
+12,Updatemetricphasing,NS: Update metricphasing by set metric_phase_2 value to invalid,0,30,50,abcd,32,200,metric_phasing,OK
+13,Updatemetricphasing,NS: Update metricphasing by set metric_phase_2 value to empty,0,40,40,,75,200,metric_phasing,OK
+14,Updatemetricphasing,NS: Update metricphasing by set metric_phase_2 value to invalid,0,50,15,35,abcd,200,metric_phasing,OK
+15,Updatemetricphasing,NS: Update metricphasing by set metric_phase_2 value to empty,0,25,100,97,,200,metric_phasing,OK
+16,Updatemetricphasing,NS: Update metricphasing without any metric values,0,,,,,200,metric_phasing,OK
+17,Updatemetricphasing,NS: Update metricphasing without any  values,,,,,,406,Not Acceptable,Not Acceptable
